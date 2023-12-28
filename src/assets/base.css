@@ -4,7 +4,10 @@
 :root {
   --vt-c-action-color:#5B70AF;
   --vt-c-text-color: #344051;
-  
+  --vt-c-heading-color: #343434;
+  --vt-c-paragraph-color: #575353;
+  --vt-c-input-color: #EFF1F999;
+
 }
 
 *,
