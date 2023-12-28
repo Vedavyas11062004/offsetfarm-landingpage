@@ -25,7 +25,9 @@ const toggleDialog = () => {
       </p>
       <button @click="toggleDialog">Get Started</button>
     </div>
-    <div class="rightPart"></div>
+    <div class="rightPart">
+      <img src="@/assets/Hero-image.svg" alt="hero-img"/>
+    </div>
     <div class="dialog-overlay" v-if="isDialogEnabled">
       <div class="dialog">
         <img
@@ -58,7 +60,8 @@ const toggleDialog = () => {
 
 <style scoped>
 main {
-  margin-inline: 77px;
+  margin-left: 77px;
+  display: flex;
 }
 .backgroundImg {
   position: absolute;
