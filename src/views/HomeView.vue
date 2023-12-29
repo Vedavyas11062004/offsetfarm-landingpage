@@ -8,6 +8,7 @@ import customerMapping from '@/components/customerMapping.vue';
 import intutiveDesign from '@/components/intutiveDesigns.vue';
 import reporting from '@/components/reporting.vue'
 import reviews from '@/components/reviews.vue';
+import industries from '@/components/industries.vue';
 </script>
 
 <template>
@@ -21,5 +22,6 @@ import reviews from '@/components/reviews.vue';
     <intutiveDesign /> 
     <reporting /> 
     <reviews/>
+    <industries/>
   </main>
 </template>
