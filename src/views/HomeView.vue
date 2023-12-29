@@ -4,6 +4,7 @@ import companies from '@/components/companies.vue';
 import products from '@/components/products.vue';
 import features from '@/components/features.vue';
 import dynamicAssesment from '@/components/dynamicAssesment.vue';
+import customerMapping from '@/components/customerMapping.vue';
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import dynamicAssesment from '@/components/dynamicAssesment.vue';
     <products />
     <features />
     <dynamicAssesment /> 
+    <customerMapping /> 
   </main>
 </template>
