@@ -5,6 +5,7 @@ import products from '@/components/products.vue';
 import features from '@/components/features.vue';
 import dynamicAssesment from '@/components/dynamicAssesment.vue';
 import customerMapping from '@/components/customerMapping.vue';
+import intutiveDesign from '@/components/intutiveDesigns.vue';
 </script>
 
 <template>
@@ -15,5 +16,6 @@ import customerMapping from '@/components/customerMapping.vue';
     <features />
     <dynamicAssesment /> 
     <customerMapping /> 
+    <intutiveDesign /> 
   </main>
 </template>
