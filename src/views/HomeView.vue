@@ -9,6 +9,7 @@ import intutiveDesign from '@/components/intutiveDesigns.vue';
 import reporting from '@/components/reporting.vue'
 import reviews from '@/components/reviews.vue';
 import industries from '@/components/industries.vue';
+import footerContainer from '@/components/footerContainer.vue';
 </script>
 
 <template>
@@ -23,5 +24,6 @@ import industries from '@/components/industries.vue';
     <reporting /> 
     <reviews/>
     <industries/>
+    <footerContainer/>
   </main>
 </template>
