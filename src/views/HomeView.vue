@@ -2,6 +2,7 @@
 import TheWelcome from '../components/TheWelcome.vue'
 import companies from '@/components/companies.vue';
 import products from '@/components/products.vue';
+import features from '@/components/features.vue';
 </script>
 
 <template>
@@ -9,5 +10,6 @@ import products from '@/components/products.vue';
     <TheWelcome />
     <companies />
     <products />
+    <features />
   </main>
 </template>
