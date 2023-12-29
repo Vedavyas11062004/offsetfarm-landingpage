@@ -49,7 +49,6 @@ const data = ref([
   align-items: center;
   gap: 50px;
   margin-left: 79px;
-  margin-top: 74px;
 }
 
 .leftPart {

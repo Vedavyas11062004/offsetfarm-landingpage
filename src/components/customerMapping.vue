@@ -40,7 +40,7 @@
   margin-inline: 77px;
   display: flex;
   gap: 76px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .leftPart{
     width: 50%;

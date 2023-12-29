@@ -6,6 +6,7 @@ import features from '@/components/features.vue';
 import dynamicAssesment from '@/components/dynamicAssesment.vue';
 import customerMapping from '@/components/customerMapping.vue';
 import intutiveDesign from '@/components/intutiveDesigns.vue';
+import reporting from '@/components/reporting.vue'
 </script>
 
 <template>
@@ -17,5 +18,6 @@ import intutiveDesign from '@/components/intutiveDesigns.vue';
     <dynamicAssesment /> 
     <customerMapping /> 
     <intutiveDesign /> 
+    <reporting /> 
   </main>
 </template>
