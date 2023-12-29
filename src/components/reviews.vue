@@ -54,6 +54,7 @@ const data = ref([
 .reviews_container{
     background: #F3F5FF;
     padding-block: 72px;
+    overflow: hidden;
 }
 .reviews_container > h2 {
   color: var(--vt-c-action-color);

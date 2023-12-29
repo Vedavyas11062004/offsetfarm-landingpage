@@ -41,6 +41,7 @@
   margin-left: 77px;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .leftPart {
   width: 50%;
