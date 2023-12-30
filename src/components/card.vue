@@ -27,8 +27,8 @@ console.log(props.imageUrl);
   gap: 12px;
 }
 
-.card:hover{
-    box-shadow: 0px 15px 35px 1px rgba(0, 0, 0, 0.1);
+.card:hover {
+  box-shadow: 0px 15px 35px 1px rgba(0, 0, 0, 0.1);
 }
 .card > img {
   width: 51px;
@@ -65,6 +65,6 @@ console.log(props.imageUrl);
   border: none;
   background-color: inherit;
   text-align: left;
-  padding-inline:0px;
+  padding-inline: 0px;
 }
 </style>

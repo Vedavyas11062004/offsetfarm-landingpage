@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import card from "./card.vue";
+import card from "@/components/card.vue";
 import image1 from "@/assets/connect-img.svg";
 import image2 from "@/assets/Trace-img.svg";
 import image3 from "@/assets/Teamer-img.svg";
