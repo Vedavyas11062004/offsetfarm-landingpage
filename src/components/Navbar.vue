@@ -135,7 +135,7 @@ const productsToggle = () => {
   display: flex;
   flex-direction: column;
   gap: 22px;
-  padding-block: 21px;
+  padding-top: 21px;
   padding-left: 19px;
   background-color: white;
 }
