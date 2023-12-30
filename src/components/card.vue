@@ -1,5 +1,6 @@
 <script setup>
 const props = defineProps(["title", "description", "imageUrl"]);
+console.log(props.imageUrl);
 </script>
 <template>
   <div class="card">

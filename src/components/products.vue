@@ -1,36 +1,41 @@
 <script setup>
 import { ref } from "vue";
 import card from "./card.vue";
+import image1 from "@/assets/connect-img.svg";
+import image2 from "@/assets/Trace-img.svg";
+import image3 from "@/assets/Teamer-img.svg";
+import image4 from "@/assets/Pulse-img.svg";
+import image5 from "@/assets/snap-img.svg";
 const data = ref([
   {
     title: "CONNECT",
     description:
       "For the first connect with customers and beneficiaries. From dynamic lead generation, orders, to seamless inventory management, automate essential processes with CONNECT",
-    imageUrl: "/src/assets/connect-img.svg",
+    imageUrl: image1,
   },
   {
     title: "TRACE",
     description:
       "Robust project MRV and customer traceability. Dynamic forms enable efficient customer monitoring and grievance handling with TRACE",
-    imageUrl: "/src/assets/Trace-img.svg",
+    imageUrl: image2,
   },
   {
     title: "TEAMER",
     description:
       "Craft virtual teams with purpose. Designate roles, hierarchies, and assign impactful projects effortlessly with TEAMER.",
-    imageUrl: "/src/assets/Teamer-img.svg",
+    imageUrl: image3,
   },
   {
     title: "PULSE",
     description:
       "Navigate your project's pulse. From SDG impacts, milestone snapshots to financial insights, PULSE is a comprehensive project dashboard.",
-    imageUrl: "/src/assets/Pulse-img.svg",
+    imageUrl: image4,
   },
   {
     title: "SNAP",
     description:
       "Real-time communication, real-time trust. Keep your investors informed and engaged with transparent, up-to-the-minute data reporting.",
-    imageUrl: "/src/assets/snap-img.svg",
+    imageUrl: image5,
   },
 ]);
 </script>
@@ -87,7 +92,7 @@ const data = ref([
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
-  line-height: 30px; 
+  line-height: 30px;
   text-align: center;
 }
 .cardsContainer {
