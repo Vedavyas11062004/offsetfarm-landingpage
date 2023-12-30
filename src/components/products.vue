@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import card from "@/components/card.vue";
+import productCard from "@/components/productCards.vue";
 import image1 from "@/assets/connect-img.svg";
 import image2 from "@/assets/Trace-img.svg";
 import image3 from "@/assets/Teamer-img.svg";
@@ -41,21 +41,23 @@ const data = ref([
 </script>
 
 <template>
-  <div class="product_content">
-    <h2>Product <span>Overview</span></h2>
-    <p>
-      Empower your enterprise with technology to generate actionable data,
-      insights and metrics. Drive impactful climate action and SDGs!
-    </p>
-  </div>
-  <div class="cardsContainer">
-    <card
-      v-for="card in data"
-      :key="card.title"
-      :title="card.title"
-      :description="card.description"
-      :imageUrl="card.imageUrl"
-    />
+  <div>
+    <div class="product_content">
+      <h2>Product <span>Overview</span></h2>
+      <p>
+        Empower your enterprise with technology to generate actionable data,
+        insights and metrics. Drive impactful climate action and SDGs!
+      </p>
+    </div>
+    <div class="cardsContainer">
+      <productCard
+        v-for="card in data"
+        :key="card.title"
+        :title="card.title"
+        :description="card.description"
+        :imageUrl="card.imageUrl"
+      />
+    </div>
   </div>
 </template>
 
