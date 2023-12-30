@@ -1,26 +1,26 @@
 <script setup>
 import { ref } from "vue";
 import testimonials from "./testimonials.vue";
+import memoji1Image from '@/assets/memoji-1.svg'; // Import the image URLs
+import memoji2Image from '@/assets/memoji-2.svg';
+
 const data = ref([
   {
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Nisl integer scelerisque in tortor sagittis erat massa. Varius facilisis ornare dictumst sem lobortis vitae lacus in in.",
+    content: "Lorem ipsum dolor sit amet consectetur. Nisl integer scelerisque in tortor sagittis erat massa. Varius facilisis ornare dictumst sem lobortis vitae lacus in in.",
     name: "Sophie Moore",
-    imageUrl: "src/assets/memoji-1.svg",
+    imageUrl: memoji1Image, // Assign imported image URL
     designation: "Head of Marketing",
   },
   {
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Nisl integer scelerisque in tortor sagittis erat massa. Varius facilisis ornare dictumst sem lobortis vitae lacus in in.",
+    content: "Lorem ipsum dolor sit amet consectetur. Nisl integer scelerisque in tortor sagittis erat massa. Varius facilisis ornare dictumst sem lobortis vitae lacus in in.",
     name: "Sophie More",
-    imageUrl: "src/assets/memoji-1.svg",
+    imageUrl: memoji1Image, // Assign imported image URL
     designation: "Product Manager at Infosys",
   },
   {
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Nisl integer scelerisque in tortor sagittis erat massa. Varius facilisis ornare dictumst sem lobortis vitae lacus in in.",
+    content: "Lorem ipsum dolor sit amet consectetur. Nisl integer scelerisque in tortor sagittis erat massa. Varius facilisis ornare dictumst sem lobortis vitae lacus in in.",
     name: "Adam Gwadyr",
-    imageUrl: "src/assets/memoji-2.svg",
+    imageUrl: memoji2Image, // Assign imported image URL
     designation: "Entrepreneur",
   },
 ]);
