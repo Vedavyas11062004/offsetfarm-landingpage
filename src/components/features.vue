@@ -1,18 +1,21 @@
 <script setup>
 import { ref } from "vue";
 import contentCard from "./contentCard.vue";
+import languageImage from "@/assets/language.svg";
+import subtitlesImage from "@/assets/subtitles.svg";
+
 const data = ref([
   {
     title: "Adaptive Language",
     description:
       "Break down language barriers and speak the language of your customers, even in remote areas.",
-    imageUrl: "src/assets/language.svg",
+    imageUrl: languageImage, // Use the imported image URL
   },
   {
-    title:"Global Reach, Local Touch",
-    description:"Connect in your local language with a global product.",
-    imageUrl:"src/assets/subtitles.svg"
-  }
+    title: "Global Reach, Local Touch",
+    description: "Connect in your local language with a global product.",
+    imageUrl: subtitlesImage, // Use the imported image URL
+  },
 ]);
 </script>
 

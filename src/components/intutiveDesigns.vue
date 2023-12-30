@@ -1,17 +1,19 @@
 <script setup>
 import { ref } from "vue";
 import contentCard from "./contentCard.vue";
+import cloudOffImage from '@/assets/cloud_off.svg'; // Import the image URLs
+import widgetsBlackImage from '@/assets/widgets_black.svg';
+
 const data = ref([
   {
     title: "Offline Capabilities",
-    description:
-      "Our robust offline features ensure no customer is left behind, regardless of internet connectivity.",
-    imageUrl: "src/assets/cloud_off.svg",
+    description: "Our robust offline features ensure no customer is left behind, regardless of internet connectivity.",
+    imageUrl: cloudOffImage, // Assign imported image URL
   },
   {
     title: "Simplified User Journey",
     description: "A clean, intuitive interface designed to minimize learning curves and maximize productivity.",
-    imageUrl: "src/assets/widgets_black.svg",
+    imageUrl: widgetsBlackImage, // Assign imported image URL
   },
 ]);
 </script>

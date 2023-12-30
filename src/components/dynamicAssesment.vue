@@ -1,18 +1,21 @@
 <script setup>
 import { ref } from "vue";
 import contentCard from "./contentCard.vue";
+import insightsImage from '@/assets/insights.svg';
+import analyticsImage from '@/assets/analytics.svg';
+
 const data = ref([
   {
-    title: "Data-Driven Relationships",
+    title: 'Data-Driven Relationships',
     description:
-      "Generate a nuanced understanding of your customers through advanced lead generation, turning data into relationships",
-    imageUrl: "src/assets/insights.svg",
+      'Generate a nuanced understanding of your customers through advanced lead generation, turning data into relationships',
+    imageUrl: insightsImage,
   },
   {
-    title: "Advanced Customer Insights",
+    title: 'Advanced Customer Insights',
     description:
-      "Generate a nuanced understanding of your customers through advanced lead generation, turning data into relationships",
-    imageUrl: "src/assets/analytics.svg",
+      'Generate a nuanced understanding of your customers through advanced lead generation, turning data into relationships',
+    imageUrl: analyticsImage,
   },
 ]);
 </script>

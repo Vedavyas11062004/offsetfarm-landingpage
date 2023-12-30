@@ -1,24 +1,28 @@
 <script setup>
 import { ref } from "vue";
 import contentCard from "./contentCard.vue";
+import plantDuotoneImage from "@/assets/plant-duotone.svg"; // Import the image URLs
+import leafBlackImage from "@/assets/leaf_black.svg";
+import tipsImage from "@/assets/tips.svg";
+
 const data = ref([
   {
     title: "Carbon Markets",
     description:
       "Navigate the carbon markets with precision and high quality MRV. We cater to distributed energy projects working on highly impactful outcomes.",
-    imageUrl: "src/assets/plant-duotone.svg",
+    imageUrl: plantDuotoneImage, // Assign imported image URL
   },
   {
     title: "Energy Access",
     description:
       "Lighting up lives with equitable energy access. Enable inclusive energy access powered by tech. Be it distributing a solar pump in a remote village, LED lights, biogas units, we cover them all.",
-    imageUrl: "src/assets/leaf_black.svg",
+    imageUrl: leafBlackImage, // Assign imported image URL
   },
   {
     title: "Energy Efficiency",
     description:
       "Maximizing output with minimal input. Champion projects that redefine energy optimization. Be it energy efficiency in household cooking or buildings.",
-    imageUrl: "src/assets/tips.svg",
+    imageUrl: tipsImage, // Assign imported image URL
   },
 ]);
 </script>
@@ -46,7 +50,6 @@ const data = ref([
 </template>
 
 <style scoped>
-
 .leftPart > h2 {
   width: 388px;
   color: var(--vt-c-action-color);
@@ -68,16 +71,16 @@ const data = ref([
   margin-bottom: 2rem;
   width: 331px;
 }
-.industries_container{
-    display: flex;
-    padding-inline: 77px;
-    padding-block: 117px;
-    gap: 49px;
-    align-items: center;
+.industries_container {
+  display: flex;
+  padding-inline: 77px;
+  padding-block: 117px;
+  gap: 49px;
+  align-items: center;
 }
 
-.cards{
-    display: flex;
-    gap: 77px;
+.cards {
+  display: flex;
+  gap: 77px;
 }
 </style>
