@@ -39,7 +39,8 @@ const scrollToHero = () => {
 <style scoped>
 .btn {
   position: fixed;
-  bottom: 20px;
+  /* bottom: 20px; */
+  top: 658px;
   right: 20px;
 }
 .btn:hover {

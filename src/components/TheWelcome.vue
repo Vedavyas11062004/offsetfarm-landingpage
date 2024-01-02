@@ -26,7 +26,7 @@ const toggleDialog = () => {
       <button @click="toggleDialog">Get Started</button>
     </div>
     <div class="rightPart">
-      <img src="@/assets/Hero-image.svg" alt="hero-img"/>
+      <img src="@/assets/Gifs/hero-page-animations-[1copy].gif" alt="hero-img"/>
     </div>
     <div class="dialog-overlay" v-if="isDialogEnabled">
       <div class="dialog">
@@ -221,4 +221,8 @@ main {
   text-align: center;
 }
 
+.rightPart>img{
+  width: 774px;
+  height: 472px;
+}
 </style>

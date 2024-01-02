@@ -49,7 +49,7 @@ const data = ref([
         </div>
       </div>
       <div class="rightPart">
-        <img src="@/assets/featues-image.svg" alt="img.."/>
+        <img src="@/assets/Gifs/Multilingual-language.gif" alt="img.." />
       </div>
     </div>
   </div>
@@ -59,10 +59,12 @@ const data = ref([
 .features_div {
   margin-block: 80px;
 }
-.features_container{
+.features_container {
   display: flex;
   align-items: center;
-  gap: 100px;
+  width: 85%;
+  justify-content: space-between;
+  /* gap: 166px; */
 }
 .product_content {
   width: 80%;
@@ -128,14 +130,28 @@ const data = ref([
   letter-spacing: 0.583px;
 }
 
-.leftFrames{
+.leftFrames {
   margin-top: 33px;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.contentCard{
+.contentCard {
   width: 448px;
+}
+
+.rightPart{
+  background-image: url('@/assets/Gifs/Ellipse.svg');
+  background-repeat: no-repeat;
+  width: 470px;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+}
+
+.rightPart > img {
+  width: 367px;
+  height: 569px;
 }
 </style>

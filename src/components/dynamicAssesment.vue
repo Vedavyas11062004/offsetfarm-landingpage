@@ -41,6 +41,9 @@ const data = ref([
         />
       </div>
     </div>
+    <div class="rightPart">
+      <img src="@/assets/Gifs/DYNAMIC LEAD ASSESMENT.gif" alt="dynamic assesment">
+    </div>
   </div>
 </template>
 
@@ -48,6 +51,11 @@ const data = ref([
 .assesment_container {
   margin-inline: 77px;
   margin-bottom: 142px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
 }
 .leftPart {
   width: 55%;
@@ -82,5 +90,10 @@ const data = ref([
 .cards{
     display: flex;
     gap: 80px;
+}
+
+.rightPart>img{
+  width: 656px;
+
 }
 </style>

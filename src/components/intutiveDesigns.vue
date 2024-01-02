@@ -1,18 +1,20 @@
 <script setup>
 import { ref } from "vue";
 import contentCard from "./contentCard.vue";
-import cloudOffImage from '@/assets/cloud_off.svg'; // Import the image URLs
-import widgetsBlackImage from '@/assets/widgets_black.svg';
+import cloudOffImage from "@/assets/cloud_off.svg"; // Import the image URLs
+import widgetsBlackImage from "@/assets/widgets_black.svg";
 
 const data = ref([
   {
     title: "Offline Capabilities",
-    description: "Our robust offline features ensure no customer is left behind, regardless of internet connectivity.",
+    description:
+      "Our robust offline features ensure no customer is left behind, regardless of internet connectivity.",
     imageUrl: cloudOffImage, // Assign imported image URL
   },
   {
     title: "Simplified User Journey",
-    description: "A clean, intuitive interface designed to minimize learning curves and maximize productivity.",
+    description:
+      "A clean, intuitive interface designed to minimize learning curves and maximize productivity.",
     imageUrl: widgetsBlackImage, // Assign imported image URL
   },
 ]);
@@ -40,7 +42,7 @@ const data = ref([
       </div>
     </div>
     <div class="rightPart">
-      <img src="@/assets/intutiveDesign-image.svg" alt="img.." />
+      <img src="@/assets/Gifs/Intutive-Designs.gif" alt="img.." />
     </div>
   </div>
 </template>
@@ -49,8 +51,11 @@ const data = ref([
 .features_container {
   display: flex;
   align-items: center;
-  gap: 50px;
+  /* gap: 30px; */
   margin-left: 79px;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 .leftPart {
@@ -93,7 +98,17 @@ const data = ref([
   width: 448px;
 }
 
-.rightPart>img{
-    transform: scale(.85);
+.rightPart{
+  background-image: url('@/assets/Gifs/Vector.svg');
+  background-repeat: no-repeat;
+  width: 626.846px;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+}
+
+.rightPart > img {
+  width: 432px;
+  height: 707px;
 }
 </style>

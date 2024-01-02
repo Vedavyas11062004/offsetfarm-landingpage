@@ -31,7 +31,7 @@
       </button>
     </div>
     <div class="rightPart">
-        <img src="@/assets/New-file.svg" alt="img.."/>
+        <img src="@/assets/Gifs/real-time-reporting.gif" alt="img.."/>
     </div>
   </div>
 </template>
@@ -42,6 +42,9 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  width: 90%;
+  justify-content: space-between;
+  margin-block: 80px;
 }
 .leftPart {
   width: 50%;
@@ -114,5 +117,9 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.rightPart>img{
+  width: 726.846px;
 }
 </style>
