@@ -7,7 +7,10 @@ console.log(props.imageUrl);
     <img :src="props.imageUrl" alt="cardimg" />
     <h3>{{ props.title }}</h3>
     <p>{{ props.description }}</p>
-    <button>Learn more</button>
+    <button>
+      Learn more
+      <img src="@/assets/sideArrow.svg" alt="sideArrow" class="sidearrow" />
+    </button>
   </div>
 </template>
 
@@ -25,10 +28,20 @@ console.log(props.imageUrl);
   padding-inline: 25px;
   padding-block: 22px;
   gap: 12px;
+  transition: 0.15s ease;
+}
+
+.sidearrow{
+  display: none;
 }
 
 .card:hover {
-  box-shadow: 0px 15px 35px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 35px 1px rgba(91, 112, 175, 0.12);
+  transition-delay: 0.2s;
+  /* box-shadow: 0 24px 0 0 rgba(91, 112, 175, 0.12); */
+}
+.card:hover .sidearrow{
+  display: block;
 }
 .card > img {
   width: 51px;
@@ -66,5 +79,8 @@ console.log(props.imageUrl);
   background-color: inherit;
   text-align: left;
   padding-inline: 0px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 </style>
