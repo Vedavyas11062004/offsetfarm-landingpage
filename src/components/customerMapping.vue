@@ -30,7 +30,7 @@
       </ul>
     </div>
     <div class="rightPart">
-        <img src="@/assets/customer-mapping.svg" alt="customerMapping.."/>
+      <img src="@/assets/customer-mapping.svg" alt="customerMapping.." />
     </div>
   </div>
 </template>
@@ -42,8 +42,8 @@
   gap: 76px;
   /* margin-bottom: 50px; */
 }
-.leftPart{
-    width: 50%;
+.leftPart {
+  width: 50%;
 }
 .leftPart > h2 {
   color: var(--vt-c-heading-color);
@@ -73,8 +73,8 @@
   gap: 15px;
   align-items: flex-start;
 }
-.points>li>img{
-    margin-top: 5px;
+.points > li > img {
+  margin-top: 5px;
 }
 .points > li > p {
   color: var(--vt-c-paragraph-color);
@@ -92,5 +92,29 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.583px;
+}
+
+@media (max-width: 800px) {
+  .customer_container {
+    margin-inline: 0px;
+    width: 90%;
+    margin-inline: auto;
+    flex-direction: column;
+  }
+  .leftPart {
+    width: auto;
+  }
+  .leftPart > h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.583px;
+  }
+  .rightPart > img {
+    /* width: 297.731px; */
+    height: 249.749px;
+    margin-inline:auto;
+  }
 }
 </style>

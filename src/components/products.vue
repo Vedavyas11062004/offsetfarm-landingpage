@@ -105,4 +105,28 @@ const data = ref([
   justify-content: center;
   row-gap: 42px;
 }
+
+@media (max-width: 800px) {
+  .product_content {
+    width: 90%;
+    margin-inline: auto;
+    overflow: hidden;
+  }
+  .product_content > h2 {
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.583px;
+  }
+  .product_content > p {
+    width: auto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .cardsContainer{
+    width: 90%;
+  }
+}
 </style>

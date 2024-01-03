@@ -83,4 +83,11 @@ console.log(props.imageUrl);
   align-items: center;
   gap: 5px;
 }
+
+@media(max-width:800px)
+{
+  .card{
+    margin-left: 0%;
+  }
+}
 </style>

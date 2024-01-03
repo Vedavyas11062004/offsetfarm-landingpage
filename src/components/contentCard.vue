@@ -48,4 +48,12 @@ const props = defineProps(["title", "description", "imageUrl"]);
   line-height: normal;
   letter-spacing: 0.583px;
 }
+
+@media(max-width: 800px)
+{
+  .card_container{
+    width: 90%;
+    margin-inline: auto;
+  }
+}
 </style>

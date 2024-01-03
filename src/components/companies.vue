@@ -34,4 +34,20 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width:1000px) {
+
+  .companys{
+    width: 90%;
+    margin-inline: auto;
+    padding-block: 30px;
+  }
+  .companyImages{
+    width: 90%;
+    margin-inline: auto;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+}
 </style>

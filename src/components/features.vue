@@ -141,8 +141,8 @@ const data = ref([
   width: 448px;
 }
 
-.rightPart{
-  background-image: url('@/assets/Gifs/Ellipse.svg');
+.rightPart {
+  background-image: url("@/assets/Gifs/Ellipse.svg");
   background-repeat: no-repeat;
   width: 470px;
   background-position: bottom;
@@ -153,5 +153,66 @@ const data = ref([
 .rightPart > img {
   width: 367px;
   height: 569px;
+}
+
+@media (max-width: 800px) {
+  .product_content {
+    width: 90%;
+    margin-inline: auto;
+    overflow: hidden;
+  }
+  .product_content > h2 {
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.583px;
+  }
+  .product_content > p {
+    width: auto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .features_container {
+    margin-left: 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-inline: auto;
+  }
+  .leftPart {
+    width: 90%;
+    margin-inline: auto;
+    margin-block: 30px;
+  }
+  .leftContent > h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.583px;
+  }
+  .leftContent > p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 140% */
+    letter-spacing: 0.583px;
+  }
+
+  .contentCard {
+    width: auto;
+  }
+  .rightPart {
+    width: 90%;
+    margin-inline: auto;
+    background-size: contain;
+  }
+  .rightPart > img {
+    width: 199px;
+    height: 344px;
+  }
 }
 </style>

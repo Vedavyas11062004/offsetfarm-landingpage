@@ -1,60 +1,67 @@
 <script setup>
 import { ref } from "vue";
 import contentCard from "./contentCard.vue";
-import insightsImage from '@/assets/insights.svg';
-import analyticsImage from '@/assets/analytics.svg';
+import insightsImage from "@/assets/insights.svg";
+import analyticsImage from "@/assets/analytics.svg";
 
 const data = ref([
   {
-    title: 'Data-Driven Relationships',
+    title: "Data-Driven Relationships",
     description:
-      'Generate a nuanced understanding of your customers through advanced lead generation, turning data into relationships',
+      "Generate a nuanced understanding of your customers through advanced lead generation, turning data into relationships",
     imageUrl: insightsImage,
   },
   {
-    title: 'Advanced Customer Insights',
+    title: "Advanced Customer Insights",
     description:
-      'Generate a nuanced understanding of your customers through advanced lead generation, turning data into relationships',
+      "Generate a nuanced understanding of your customers through advanced lead generation, turning data into relationships",
     imageUrl: analyticsImage,
   },
 ]);
 </script>
 
 <template>
-  <div class="assesment_container">
-    <div class="leftPart">
-      <div class="assesment_content">
-        <h2><span>Dynamic</span> Lead Assessment</h2>
-        <p>
-          Generate a nuanced understanding of your customers through advanced
-          lead generation, turning data into relationships
-        </p>
+  <div class="assesment">
+    <div class="assesment_content">
+      <h2><span>Dynamic</span> Lead Assessment</h2>
+      <p>
+        Generate a nuanced understanding of your customers through advanced lead
+        generation, turning data into relationships
+      </p>
+    </div>
+    <div class="assesment_container">
+      <div class="leftPart">
+        <div class="cards">
+          <contentCard
+            v-for="card in data"
+            :key="card.title"
+            :title="card.title"
+            :description="card.description"
+            :imageUrl="card.imageUrl"
+            class="contentCard"
+          />
+        </div>
       </div>
-      <div class="cards">
-        <contentCard
-          v-for="card in data"
-          :key="card.title"
-          :title="card.title"
-          :description="card.description"
-          :imageUrl="card.imageUrl"
-          class="contentCard"
+      <div class="rightPart">
+        <img
+          src="@/assets/Gifs/DYNAMIC LEAD ASSESMENT.gif"
+          alt="dynamic assesment"
         />
       </div>
-    </div>
-    <div class="rightPart">
-      <img src="@/assets/Gifs/DYNAMIC LEAD ASSESMENT.gif" alt="dynamic assesment">
     </div>
   </div>
 </template>
 
 <style scoped>
-.assesment_container {
-  margin-inline: 77px;
+.assesment {
+  margin-left: 77px;
   margin-bottom: 142px;
+}
+.assesment_container {
   width: 90%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   gap: 50px;
 }
 .leftPart {
@@ -80,20 +87,66 @@ const data = ref([
 
 .assesment_content > p {
   color: var(--vt-c-paragraph-color);
-  margin-inline: auto;
+  /* margin-inline: auto; */
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
+  width: 50%;
 }
 
-.cards{
-    display: flex;
-    gap: 80px;
+.cards {
+  display: flex;
+  gap: 80px;
 }
 
-.rightPart>img{
+.rightPart > img {
   width: 656px;
+}
 
+@media (max-width: 800px) {
+  .assesment {
+    margin-left: 0%;
+  }
+  .assesment_content > h2 {
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.583px;
+    text-align: center;
+  }
+  .assesment_content > p {
+    width: auto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+  }
+  .assesment_content {
+    width: 90%;
+    margin-inline: auto;
+    overflow: hidden;
+  }
+  .assesment_container {
+    flex-direction: column-reverse;
+  }
+
+  .rightPart{
+    width: 90%;
+    margin-inline: auto;
+  }
+  .rightPart > img {
+    width: 336px;
+    height: 208px;
+    margin-inline: auto;
+  }
+  .cards{
+    flex-direction: column;
+  }
+  .leftPart{
+    width: 90%;
+    margin-inline: auto;
+  }
 }
 </style>

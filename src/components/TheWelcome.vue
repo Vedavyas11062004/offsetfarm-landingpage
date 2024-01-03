@@ -9,67 +9,84 @@ const toggleDialog = () => {
 
 <template>
   <main>
-    <img
-      src="@/assets/hero-background.svg"
-      alt="background-image"
-      class="backgroundImg"
-    />
-    <div class="leftPart">
-      <span>IMPACT ENGINE</span>
-      <h1>ENTERPRISE SUITE FOR IMPACT</h1>
-      <p>
-        Unleash the impact potential of your projects in emerging markets.
-        Seamlessly deploy assets, monitor with precision, and virtualize teams
-        for real-time insights. Tailored for grassroot organisations and
-        financiers desiring transparent impact.
-      </p>
-      <button @click="toggleDialog">Get Started</button>
-    </div>
-    <div class="rightPart">
-      <img src="@/assets/Gifs/hero-page-animations-[1copy].gif" alt="hero-img"/>
-    </div>
-    <div class="dialog-overlay" v-if="isDialogEnabled">
-      <div class="dialog">
+    <div class="backgroundImg"></div>
+    <div class="welcome_container">
+      <div class="leftPart">
+        <span>IMPACT ENGINE</span>
+        <h1>ENTERPRISE SUITE FOR IMPACT</h1>
+        <p>
+          Unleash the impact potential of your projects in emerging markets.
+          Seamlessly deploy assets, monitor with precision, and virtualize teams
+          for real-time insights. Tailored for grassroot organisations and
+          financiers desiring transparent impact.
+        </p>
+        <button @click="toggleDialog">Get Started</button>
+      </div>
+      <div class="rightPart">
         <img
-          src="@/assets/close_black.svg"
-          alt="cross"
-          class="cross"
-          @click="toggleDialog"
+          src="@/assets/Gifs/hero-page-animations-[1copy].gif"
+          alt="hero-img"
         />
-        <form class="dialog_form">
-          <h2>Contact Us</h2>
-          <p>We are here for you! How can we help?</p>
-          <input type="text" placeholder="Enter your name" class="name" />
-          <input
-            type="text"
-            placeholder="Enter your Email address"
-            class="email"
+      </div>
+      <div class="dialog-overlay" v-if="isDialogEnabled">
+        <div class="dialog">
+          <img
+            src="@/assets/close_black.svg"
+            alt="cross"
+            class="cross"
+            @click="toggleDialog"
           />
-          <label class="messageLabel"> Message </label>
-          <input
-            type="text"
-            placeholder="Go ahead,we are listening.."
-            class="message"
-          />
-          <button class="submit_button">Submit</button>
-        </form>
+          <form class="dialog_form">
+            <h2>Contact Us</h2>
+            <p>We are here for you! How can we help?</p>
+            <input type="text" placeholder="Enter your name" class="name" />
+            <input
+              type="text"
+              placeholder="Enter your Email address"
+              class="email"
+            />
+            <label class="messageLabel"> Message </label>
+            <input
+              type="text"
+              placeholder="Go ahead,we are listening.."
+              class="message"
+            />
+            <button class="submit_button">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   </main>
 </template>
 
 <style scoped>
-main {
-  margin-left: 77px;
-  display: flex;
-}
 .backgroundImg {
+  width: 100%;
+  height: 747px;
+  background: var(
+    --Regnfi-gradient,
+    conic-gradient(
+      from 107deg at 48.77% 49.04%,
+      rgba(193, 204, 236, 0.35) 177.7819526195526deg,
+      rgba(238, 235, 243, 0.66) 227.16967105865479deg,
+      rgba(236, 231, 243, 0.63) 298.1310725212097deg,
+      rgba(233, 226, 244, 0.72) 360deg
+    )
+  );
   position: absolute;
   width: 100%;
   top: 0%;
   left: 0%;
   z-index: -1;
 }
+.welcome_container {
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .leftPart {
   width: 50%;
   margin-top: 77px;
@@ -221,8 +238,44 @@ main {
   text-align: center;
 }
 
-.rightPart>img{
+
+.rightPart > img {
   width: 774px;
   height: 472px;
+}
+
+@media (max-width: 950px) {
+  main {
+    width: 90%;
+    margin-inline: auto;
+  }
+  .backgroundImg {
+    width: 100%;
+    height: 730px;
+    background: var(
+      --Regnfi-gradient,
+      conic-gradient(
+        from 107deg at 48.77% 49.04%,
+        rgba(193, 204, 236, 0.35) 177.7819526195526deg,
+        rgba(238, 235, 243, 0.66) 227.16967105865479deg,
+        rgba(236, 231, 243, 0.63) 298.1310725212097deg,
+        rgba(233, 226, 244, 0.72) 360deg
+      )
+    );
+  }
+  .rightPart {
+    display: none;
+  }
+
+  .leftPart {
+    width: 100%;
+  }
+
+  .leftPart > h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.583px;
+  }
 }
 </style>

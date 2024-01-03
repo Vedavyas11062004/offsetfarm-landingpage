@@ -83,4 +83,17 @@ const data = ref([
   display: flex;
   gap: 77px;
 }
+
+@media(max-width: 800px)
+{
+  .industries_container{
+    flex-direction: column;
+    padding-inline: 0px;
+    gap: 10px;
+  }
+  .cards{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 </style>
