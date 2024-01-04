@@ -38,27 +38,47 @@ const productsToggle = () => {
               <li>
                 <img src="@/assets/connect-img.svg" alt="connect" />
                 <span>Connect</span>
-                <img src="@/assets/sideArrow.svg" alt="sideArrow" class="sidearrow" />
+                <img
+                  src="@/assets/sideArrow.svg"
+                  alt="sideArrow"
+                  class="sidearrow"
+                />
               </li>
               <li>
                 <img src="@/assets/Trace-img.svg" alt="trace" />
                 <span>Trace</span>
-                <img src="@/assets/sideArrow.svg" alt="sideArrow" class="sidearrow"/>
+                <img
+                  src="@/assets/sideArrow.svg"
+                  alt="sideArrow"
+                  class="sidearrow"
+                />
               </li>
               <li>
                 <img src="@/assets/Teamer-img.svg" alt="teamer" />
                 <span>Teamer</span>
-                <img src="@/assets/sideArrow.svg" alt="sideArrow" class="sidearrow"/>
+                <img
+                  src="@/assets/sideArrow.svg"
+                  alt="sideArrow"
+                  class="sidearrow"
+                />
               </li>
               <li>
                 <img src="@/assets/Pulse-img.svg" alt="pulse" />
                 <span>Pulse</span>
-                <img src="@/assets/sideArrow.svg" alt="sideArrow" class="sidearrow"/>
+                <img
+                  src="@/assets/sideArrow.svg"
+                  alt="sideArrow"
+                  class="sidearrow"
+                />
               </li>
               <li>
                 <img src="@/assets/snap-img.svg" alt="snap" />
                 <span>Snap</span>
-                <img src="@/assets/sideArrow.svg" alt="sideArrow" class="sidearrow" />
+                <img
+                  src="@/assets/sideArrow.svg"
+                  alt="sideArrow"
+                  class="sidearrow"
+                />
               </li>
             </ul>
           </div>
@@ -128,7 +148,7 @@ const productsToggle = () => {
   padding: 0%;
   display: block;
   margin-block: 0.5rem;
-  border: 1px solid #EFF0F6;
+  border: 1px solid #eff0f6;
   width: 221px;
   height: 250px;
   border-radius: 12px;
@@ -144,10 +164,10 @@ const productsToggle = () => {
   gap: 1rem;
 }
 
-.products:hover > span{
+.products:hover > span {
   color: var(--vt-c-action-color);
 }
-.products_list { 
+.products_list {
   display: none;
 }
 .products_list > li {
@@ -156,13 +176,13 @@ const productsToggle = () => {
   align-items: center;
 }
 
-.sidearrow{
+.sidearrow {
   display: none;
 }
-.products_list>li:hover{
- color: var(--vt-c-action-color);
+.products_list > li:hover {
+  color: var(--vt-c-action-color);
 }
-.products_list>li:hover .sidearrow{
+.products_list > li:hover .sidearrow {
   display: block;
   cursor: pointer;
 }
@@ -174,7 +194,7 @@ const productsToggle = () => {
     justify-content: space-between;
     margin-top: 0%;
   }
-  .header__container[data-expanded="true"] >.logo {
+  .header__container[data-expanded="true"] > .logo {
     display: none;
   }
   .logo {
@@ -188,7 +208,7 @@ const productsToggle = () => {
     margin-top: 20px;
   }
   .toggle-button[data-expanded="true"] {
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 20px;
     z-index: 9999;
@@ -213,10 +233,14 @@ const productsToggle = () => {
   }
   .list_div[data-expanded="true"] {
     display: block;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: var(--Patel-purple, #F3F5FF);
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: var(--Patel-purple, #f3f5ff);
+    z-index: 999; 
+    overflow-y: auto; 
   }
   .list {
     display: flex;
