@@ -49,11 +49,21 @@ const props = defineProps(["title", "description", "imageUrl"]);
   letter-spacing: 0.583px;
 }
 
-@media(max-width: 800px)
-{
-  .card_container{
-    width: 90%;
-    margin-inline: auto;
+@media (max-width: 1200px) {
+  
+  .content_text > h3 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.583px;
+  }
+  .content_text > p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.583px;
   }
 }
 </style>

@@ -46,4 +46,10 @@ const scrollToHero = () => {
 .btn:hover {
   cursor: pointer;
 }
+
+@media(max-width: 1200px){
+  .btn{
+    display: none;
+  }
+}
 </style>

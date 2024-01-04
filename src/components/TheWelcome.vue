@@ -240,11 +240,12 @@ const toggleDialog = () => {
 
 
 .rightPart > img {
-  width: 774px;
+  max-width: 774px;
   height: 472px;
+  width: 55vw;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   main {
     width: 90%;
     margin-inline: auto;

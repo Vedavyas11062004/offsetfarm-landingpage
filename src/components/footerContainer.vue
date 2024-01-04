@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="lists">
-      <div class="list">
+      <div class="list left">
         <h3>Products</h3>
         <ul>
           <li>Connect</li>
@@ -21,7 +21,7 @@
           <li>snap</li>
         </ul>
       </div>
-      <div class="list">
+      <div class="list rightTop">
         <h3>Resources</h3>
         <ul>
           <li>Products</li>
@@ -29,7 +29,7 @@
           <li>Industries</li>
         </ul>
       </div>
-      <div class="list">
+      <div class="list rightBottom">
         <h3>Contact Us</h3>
         <ul>
           <li>info@regenfi.tech</li>
@@ -148,5 +148,37 @@
 
 .footerend>div>p>span{
   color: var(--vt-c-action-color);
+}
+
+@media(max-width: 1200px){
+  .footer_container{
+    margin-left: 0%;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .leftPart{
+    width: 90%;
+    margin-inline: auto;
+  }
+  .lists{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 90%;
+    margin-inline: auto;
+  }
+  .left{
+    grid-column:1/2;
+    grid-row: span 2;
+  }
+  .line{
+    margin-inline: auto;
+  }
+  .footerend>div{
+    margin-inline: auto;
+  }
 }
 </style>

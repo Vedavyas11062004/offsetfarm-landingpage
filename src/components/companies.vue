@@ -35,12 +35,14 @@
   justify-content: space-between;
 }
 
-@media (max-width:1000px) {
+@media (max-width:12000px) {
 
   .companys{
     width: 90%;
     margin-inline: auto;
     padding-block: 30px;
+    margin-bottom: 50px;
+
   }
   .companyImages{
     width: 90%;
@@ -50,4 +52,12 @@
     justify-content: center;
   }
 }
+
+@media (min-width: 550px) and (max-width: 820px) {
+  .companys{
+    margin-top: 300px;
+    margin-bottom: 50px;
+  }
+}
+
 </style>

@@ -124,7 +124,7 @@ const data = ref([
   height: 707px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .features_container {
     margin-left: 0%;
     grid-template-columns: 1fr;
@@ -142,7 +142,7 @@ const data = ref([
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.583px;
-    text-align: center;
+    width: auto;
   }
   .leftContent > p {
     width: inherit;
@@ -156,6 +156,8 @@ const data = ref([
     width: 90%;
     margin-inline: auto;
     background-size: contain;
+    margin-top:10px;
+    margin-bottom: 20px;
   }
   .rightPart > img {
     width: 197.355px;
@@ -163,10 +165,10 @@ const data = ref([
   }
   .contentCard{
     width: auto;
+    margin-inline: 0px;
   }
-  /* .leftFrames{
-    width: 90%;
-    margin-inline: auto;
-  } */
+  .leftFrames{
+    margin-top: 0%;
+  }
 }
 </style>

@@ -155,7 +155,7 @@ const data = ref([
   height: 569px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .product_content {
     width: 90%;
     margin-inline: auto;
@@ -166,6 +166,7 @@ const data = ref([
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.583px;
+    text-align: center;
   }
   .product_content > p {
     width: auto;
@@ -173,6 +174,7 @@ const data = ref([
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
+    text-align: center;
   }
   .features_container {
     margin-left: 0px;
@@ -183,8 +185,8 @@ const data = ref([
     margin-inline: auto;
   }
   .leftPart {
-    width: 90%;
-    margin-inline: auto;
+    width: auto;
+    /* margin-inline: auto; */
     margin-block: 30px;
   }
   .leftContent > h2 {
@@ -193,6 +195,7 @@ const data = ref([
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.583px;
+    width: auto;
   }
   .leftContent > p {
     font-size: 15px;

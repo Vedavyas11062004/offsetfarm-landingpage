@@ -104,16 +104,16 @@ const data = ref([
   width: 656px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .assesment {
     margin-left: 0%;
+    margin-bottom: 50px;
   }
   .assesment_content > h2 {
     font-size: 28px;
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.583px;
-    text-align: center;
   }
   .assesment_content > p {
     width: auto;
@@ -121,7 +121,6 @@ const data = ref([
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    text-align: center;
   }
   .assesment_content {
     width: 90%;
@@ -130,10 +129,12 @@ const data = ref([
   }
   .assesment_container {
     flex-direction: column-reverse;
+    width: 90%;
+    margin-inline: auto;
+    align-items: start;
   }
 
   .rightPart{
-    width: 90%;
     margin-inline: auto;
   }
   .rightPart > img {
@@ -143,10 +144,13 @@ const data = ref([
   }
   .cards{
     flex-direction: column;
+    gap: 25px;
   }
   .leftPart{
-    width: 90%;
-    margin-inline: auto;
+    width: auto;
+  }
+  .contentCard{
+    width: auto;
   }
 }
 </style>

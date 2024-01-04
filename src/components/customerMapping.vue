@@ -94,7 +94,7 @@
   letter-spacing: 0.583px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .customer_container {
     margin-inline: 0px;
     width: 90%;
@@ -111,10 +111,20 @@
     line-height: normal;
     letter-spacing: 0.583px;
   }
+  .rightPart {
+    margin-inline: auto;
+  }
   .rightPart > img {
     /* width: 297.731px; */
     height: 249.749px;
-    margin-inline:auto;
+    margin-inline: auto;
+  }
+  .points > li > p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.583px;
   }
 }
 </style>

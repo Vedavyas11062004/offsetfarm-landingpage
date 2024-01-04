@@ -167,7 +167,7 @@ const productsToggle = () => {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .header__container {
     margin-left: 0px;
     width: 100%;
@@ -192,17 +192,17 @@ const productsToggle = () => {
     right: 20px;
     top: 20px;
     z-index: 9999;
-    background-color: white;
-    width: 30px;
-    height: 30px;
+    /* background-color: white; */
+    width: 24px;
+    height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
   }
   .toggle-button[data-expanded="true"] > img {
-    width: 10px;
-    height: 12px;
+    width: 24px;
+    height: 24px;
   }
   .list_div[data-expanded="false"] {
     display: none;
@@ -216,13 +216,14 @@ const productsToggle = () => {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: #279de0;
+    background: var(--Patel-purple, #F3F5FF);
   }
   .list {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 100px;
+    z-index: 200;
   }
 }
 </style>

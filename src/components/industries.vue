@@ -84,16 +84,38 @@ const data = ref([
   gap: 77px;
 }
 
-@media(max-width: 800px)
-{
-  .industries_container{
+@media (max-width: 1200px) {
+  .industries_container {
     flex-direction: column;
     padding-inline: 0px;
     gap: 10px;
+    padding-block: 50px;
   }
-  .cards{
+  .cards {
     flex-direction: column;
     gap: 20px;
+    width: 90%;
+    margin-inline: auto;
+  }
+  .leftPart {
+    width: 90%;
+    margin-inline: auto;
+  }
+  .leftPart > h2 {
+    width: auto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: 0.1px;
+  }
+  .leftPart > p {
+    width: auto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 10px;
   }
 }
 </style>

@@ -84,7 +84,7 @@ console.log(props.imageUrl);
   gap: 5px;
 }
 
-@media(max-width:800px)
+@media(max-width:1200px)
 {
   .card{
     margin-left: 0%;

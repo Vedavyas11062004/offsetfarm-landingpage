@@ -106,7 +106,7 @@ const data = ref([
   row-gap: 42px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .product_content {
     width: 90%;
     margin-inline: auto;
@@ -126,7 +126,8 @@ const data = ref([
     line-height: 24px;
   }
   .cardsContainer{
-    width: 90%;
+    width: auto;
+    gap: 20px;
   }
 }
 </style>
