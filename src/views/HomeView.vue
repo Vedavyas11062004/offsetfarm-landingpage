@@ -27,7 +27,7 @@ const scrollToHero = () => {
     <customerMapping />
     <intutiveDesign />
     <reporting />
-    <!-- <reviews /> -->
+    <reviews />
     <industries />
     <footerContainer />
     <div class="btn" @click="scrollToHero">

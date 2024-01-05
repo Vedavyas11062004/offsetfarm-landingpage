@@ -29,15 +29,34 @@ const props = defineProps(["content", "name", "imageUrl", "designation"]);
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
 }
 
-.details{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+.details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
-.details>div{
-    display: flex;
-    align-items: center;
-    gap: 16px;
+.details > div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 344px;
+  }
+  .card > p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .details span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+  }
 }
 </style>
