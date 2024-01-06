@@ -120,7 +120,7 @@ const startCarousel = () => {
     if (offset.value <= -((cards.value.length - 2) * cardWidth.value)) {
       offset.value = 0;
     }
-  }, 1000);
+  }, 2000);
 };
 
 const stopCarousel = () => {

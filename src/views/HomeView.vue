@@ -11,6 +11,7 @@ import reviews from "@/components/reviews.vue";
 import industries from "@/components/industries.vue";
 import footerContainer from "@/components/footerContainer.vue";
 import { ref } from "vue";
+import Navbar from "@/components/Navbar.vue";
 
 const scrollToHero = () => {
   window.scrollTo(0, 0);
@@ -19,6 +20,7 @@ const scrollToHero = () => {
 
 <template>
   <main>
+    <Navbar/>
     <TheWelcome />
     <companies />
     <products />
