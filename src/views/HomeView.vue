@@ -1,17 +1,17 @@
 <script setup>
-import TheWelcome from "../components/TheWelcome.vue";
-import companies from "@/components/companies.vue";
-import products from "@/components/products.vue";
-import features from "@/components/features.vue";
-import dynamicAssesment from "@/components/dynamicAssesment.vue";
-import customerMapping from "@/components/customerMapping.vue";
-import intutiveDesign from "@/components/intutiveDesigns.vue";
-import reporting from "@/components/reporting.vue";
-import reviews from "@/components/reviews.vue";
-import industries from "@/components/industries.vue";
-import footerContainer from "@/components/footerContainer.vue";
+import TheWelcome from "@/components/LandingPage/TheWelcome.vue";
+import companies from "@/components/LandingPage/companies.vue";
+import products from "@/components/LandingPage/products.vue";
+import features from "@/components/LandingPage/features.vue";
+import dynamicAssesment from "@/components/LandingPage/dynamicAssesment.vue";
+import customerMapping from "@/components/LandingPage/customerMapping.vue";
+import intutiveDesign from "@/components/LandingPage/intutiveDesigns.vue";
+import reporting from "@/components/LandingPage/reporting.vue";
+import reviews from "@/components/LandingPage/reviews.vue";
+import industries from "@/components/LandingPage/industries.vue";
+import footerContainer from "@/components/LandingPage/footerContainer.vue";
 import { ref } from "vue";
-import Navbar from "@/components/Navbar.vue";
+import Navbar from "@/components/LandingPage/Navbar.vue";
 
 const scrollToHero = () => {
   window.scrollTo(0, 0);

@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import productCard from "@/components/productCards.vue";
+import productCard from "@/components/LandingPage/productCards.vue";
 import image1 from "@/assets/LandingPage/connect-img.svg";
 import image2 from "@/assets/LandingPage/Trace-img.svg";
 import image3 from "@/assets/LandingPage/Teamer-img.svg";
