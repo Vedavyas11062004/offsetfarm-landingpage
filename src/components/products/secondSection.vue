@@ -1,5 +1,5 @@
 <script setup>
-import contentCard from "@/components/contentCard.vue";
+import contentCard from "@/components/LandingPage/contentCard.vue";
 import img1 from "@/assets/products/contentCard1.svg";
 import img2 from "@/assets/products/contentCard2.svg";
 </script>

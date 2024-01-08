@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/products/connect',
       name: 'connect',
       component: () => import('../views/ConnectView.vue')
+    },
+    {
+      path:'/products/trace',
+      name: 'trace',
+      component: () => import('../views/TraceView.vue')
     }
   ]
 })
