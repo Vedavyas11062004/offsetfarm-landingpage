@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from "vue";
 import contentCard from "./contentCard.vue";
-import plantDuotoneImage from "@/assets/plant-duotone.svg"; // Import the image URLs
-import leafBlackImage from "@/assets/leaf_black.svg";
-import tipsImage from "@/assets/tips.svg";
+import plantDuotoneImage from "@/assets/LandingPage/plant-duotone.svg"; // Import the image URLs
+import leafBlackImage from "@/assets/LandingPage/leaf_black.svg";
+import tipsImage from "@/assets/LandingPage/tips.svg";
 
 const data = ref([
   {

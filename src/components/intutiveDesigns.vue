@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import contentCard from "./contentCard.vue";
-import cloudOffImage from "@/assets/cloud_off.svg"; // Import the image URLs
-import widgetsBlackImage from "@/assets/widgets_black.svg";
+import cloudOffImage from "@/assets/LandingPage/cloud_off.svg"; // Import the image URLs
+import widgetsBlackImage from "@/assets/LandingPage/widgets_black.svg";
 
 const data = ref([
   {

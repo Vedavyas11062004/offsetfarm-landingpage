@@ -1,11 +1,11 @@
 <script setup>
 import { ref } from "vue";
 import productCard from "@/components/productCards.vue";
-import image1 from "@/assets/connect-img.svg";
-import image2 from "@/assets/Trace-img.svg";
-import image3 from "@/assets/Teamer-img.svg";
-import image4 from "@/assets/Pulse-img.svg";
-import image5 from "@/assets/snap-img.svg";
+import image1 from "@/assets/LandingPage/connect-img.svg";
+import image2 from "@/assets/LandingPage/Trace-img.svg";
+import image3 from "@/assets/LandingPage/Teamer-img.svg";
+import image4 from "@/assets/LandingPage/Pulse-img.svg";
+import image5 from "@/assets/LandingPage/snap-img.svg";
 const data = ref([
   {
     title: "CONNECT",

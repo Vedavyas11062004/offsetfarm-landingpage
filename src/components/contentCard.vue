@@ -6,7 +6,7 @@ const props = defineProps(["title", "description", "imageUrl"]);
   <div class="card_container">
     <img :src="props.imageUrl" alt="img.." />
     <div class="card_content">
-      <img src="@/assets/pseudo-line.svg" alt="line" />
+      <img src="@/assets/LandingPage/pseudo-line.svg" alt="line" />
       <div class="content_text">
         <h3>{{ props.title }}</h3>
         <p>{{ props.description }}</p>

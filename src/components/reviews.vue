@@ -39,8 +39,8 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 import testimonials from "./testimonials.vue";
-import memoji1Image from "@/assets/memoji-1.svg"; // Import the image URLs
-import memoji2Image from "@/assets/memoji-2.svg";
+import memoji1Image from "@/assets/LandingPage/memoji-1.svg"; // Import the image URLs
+import memoji2Image from "@/assets/LandingPage/memoji-2.svg";
 
 const cards = ref([
   {

@@ -15,11 +15,11 @@ const productsToggle = () => {
 <template>
   <div class="header__container" :data-expanded="expanded">
     <div class="logo">
-      <img src="@/assets/logo.svg" />
+      <img src="@/assets/LandingPage/logo.svg" />
     </div>
     <div :data-expanded="expanded" class="toggle-button" @click="toggleAction">
-      <img v-if="!expanded" src="@/assets/menu.svg" alt="toggle_button" />
-      <img v-else src="@/assets/cross.svg" alt="toggle_button" />
+      <img v-if="!expanded" src="@/assets/LandingPage/menu.svg" alt="toggle_button" />
+      <img v-else src="@/assets/LandingPage/cross.svg" alt="toggle_button" />
     </div>
     <div :data-expanded="expanded" class="list_div">
       <ul class="list" name="list">
@@ -32,50 +32,50 @@ const productsToggle = () => {
           >
             <div class="products">
               <span>Products</span>
-              <img src="@/assets/downArrow.svg" alt="downarrow.." />
+              <img src="@/assets/LandingPage/downArrow.svg" alt="downarrow.." />
             </div>
             <ul class="products_list">
               <li>
-                <img src="@/assets/connect-img.svg" alt="connect" />
+                <img src="@/assets/LandingPage/connect-img.svg" alt="connect" />
                 <span>Connect</span>
                 <img
-                  src="@/assets/sideArrow.svg"
+                  src="@/assets/LandingPage/sideArrow.svg"
                   alt="sideArrow"
                   class="sidearrow"
                 />
               </li>
               <li>
-                <img src="@/assets/Trace-img.svg" alt="trace" />
+                <img src="@/assets/LandingPage/Trace-img.svg" alt="trace" />
                 <span>Trace</span>
                 <img
-                  src="@/assets/sideArrow.svg"
+                  src="@/assets/LandingPage/sideArrow.svg"
                   alt="sideArrow"
                   class="sidearrow"
                 />
               </li>
               <li>
-                <img src="@/assets/Teamer-img.svg" alt="teamer" />
+                <img src="@/assets/LandingPage/Teamer-img.svg" alt="teamer" />
                 <span>Teamer</span>
                 <img
-                  src="@/assets/sideArrow.svg"
+                  src="@/assets/LandingPage/sideArrow.svg"
                   alt="sideArrow"
                   class="sidearrow"
                 />
               </li>
               <li>
-                <img src="@/assets/Pulse-img.svg" alt="pulse" />
+                <img src="@/assets/LandingPage/Pulse-img.svg" alt="pulse" />
                 <span>Pulse</span>
                 <img
-                  src="@/assets/sideArrow.svg"
+                  src="@/assets/LandingPage/sideArrow.svg"
                   alt="sideArrow"
                   class="sidearrow"
                 />
               </li>
               <li>
-                <img src="@/assets/snap-img.svg" alt="snap" />
+                <img src="@/assets/LandingPage/snap-img.svg" alt="snap" />
                 <span>Snap</span>
                 <img
-                  src="@/assets/sideArrow.svg"
+                  src="@/assets/LandingPage/sideArrow.svg"
                   alt="sideArrow"
                   class="sidearrow"
                 />

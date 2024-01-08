@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import contentCard from "./contentCard.vue";
-import insightsImage from "@/assets/insights.svg";
-import analyticsImage from "@/assets/analytics.svg";
+import insightsImage from "@/assets/LandingPage/insights.svg";
+import analyticsImage from "@/assets/LandingPage/analytics.svg";
 
 const data = ref([
   {

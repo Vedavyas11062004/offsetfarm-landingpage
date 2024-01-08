@@ -22,7 +22,7 @@
         </p>
         <button class="loadmoreBtn">
           <span>Learn more about snap</span>
-          <img src="@/assets/sideArrow.svg" alt="arrow" />
+          <img src="@/assets/LandingPage/sideArrow.svg" alt="arrow" />
         </button>
       </div>
       <div>

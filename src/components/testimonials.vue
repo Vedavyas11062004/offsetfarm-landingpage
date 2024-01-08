@@ -4,7 +4,7 @@ const props = defineProps(["content", "name", "imageUrl", "designation"]);
 
 <template>
   <div class="card">
-    <img src="@/assets/stars.png" alt="stars.." />
+    <img src="@/assets/LandingPage/stars.png" alt="stars.." />
     <p>{{ props.content }}</p>
     <div class="details">
       <div>

@@ -6,7 +6,7 @@
       <h2><span>Customer-to-Team</span> Mapping</h2>
       <ul class="points">
         <li>
-          <img src="@/assets/ellipse.svg" alt="img.." />
+          <img src="@/assets/LandingPage/ellipse.svg" alt="img.." />
           <p>
             Achieve unparalleled traceability by
             <span>mapping customer journeys directly to team actions ,</span>
@@ -14,14 +14,14 @@
           </p>
         </li>
         <li>
-          <img src="@/assets/ellipse.svg" alt="img.." />
+          <img src="@/assets/LandingPage/ellipse.svg" alt="img.." />
           <p>
             Align your customer interactions with <span>team activities</span> ,
             providing complete <span>transparency and accountability .</span>
           </p>
         </li>
         <li>
-          <img src="@/assets/ellipse.svg" alt="img.." />
+          <img src="@/assets/LandingPage/ellipse.svg" alt="img.." />
           <p>
             Ensure responsibility with a system that tracks and assigns customer
             feedback to relevant team members.
@@ -30,7 +30,7 @@
       </ul>
     </div>
     <div class="rightPart">
-      <img src="@/assets/customer-mapping.svg" alt="customerMapping.." />
+      <img src="@/assets/LandingPage/customer-mapping.svg" alt="customerMapping.." />
     </div>
   </div>
 </template>

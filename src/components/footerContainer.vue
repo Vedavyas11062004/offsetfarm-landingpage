@@ -2,7 +2,7 @@
 <template>
   <div class="footer_container">
     <div class="leftPart">
-      <img src="@/assets/logo.svg" alt="logo.." />
+      <img src="@/assets/LandingPage/logo.svg" alt="logo.." />
       <p>Enterprise Suite for Impact</p>
       <div class="socialIcons">
         <img src="@/assets/Social_Media_Icons/Twitter.svg" alt="twitter" />

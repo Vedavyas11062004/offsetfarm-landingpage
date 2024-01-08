@@ -33,7 +33,7 @@ const scrollToHero = () => {
     <industries />
     <footerContainer />
     <div class="btn" @click="scrollToHero">
-      <img src="@/assets/upArrow.svg" alt="arrow" />
+      <img src="@/assets/LandingPage/upArrow.svg" alt="arrow" />
     </div>
   </main>
 </template>

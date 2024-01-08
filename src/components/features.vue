@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import contentCard from "./contentCard.vue";
-import languageImage from "@/assets/language.svg";
-import subtitlesImage from "@/assets/subtitles.svg";
+import languageImage from "@/assets/LandingPage/language.svg";
+import subtitlesImage from "@/assets/LandingPage/subtitles.svg";
 
 const data = ref([
   {

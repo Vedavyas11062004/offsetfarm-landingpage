@@ -4,10 +4,10 @@
   <div class="companys">
     <h2>Trusted by</h2>
     <div class="companyImages">
-      <img src="@/assets/Infosys_logo 1.svg" alt="company1" />
-      <img src="@/assets/company2.svg" alt="company2" />
-      <img src="@/assets/company3.svg" alt="company3" />
-      <img src="@/assets/company4.svg" alt="company4" />
+      <img src="@/assets/LandingPage/Infosys_logo 1.svg" alt="company1" />
+      <img src="@/assets/LandingPage/company2.svg" alt="company2" />
+      <img src="@/assets/LandingPage/company3.svg" alt="company3" />
+      <img src="@/assets/LandingPage/company4.svg" alt="company4" />
     </div>
   </div>
 </template>

@@ -31,7 +31,7 @@ const toggleDialog = () => {
       <div class="dialog-overlay" v-if="isDialogEnabled">
         <div class="dialog">
           <img
-            src="@/assets/close_black.svg"
+            src="@/assets/LandingPage/close_black.svg"
             alt="cross"
             class="cross"
             @click="toggleDialog"

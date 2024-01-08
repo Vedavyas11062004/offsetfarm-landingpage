@@ -9,7 +9,7 @@ console.log(props.imageUrl);
     <p>{{ props.description }}</p>
     <button>
       Learn more
-      <img src="@/assets/sideArrow.svg" alt="sideArrow" class="sidearrow" />
+      <img src="@/assets/LandingPage/sideArrow.svg" alt="sideArrow" class="sidearrow" />
     </button>
   </div>
 </template>
