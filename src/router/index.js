@@ -26,6 +26,11 @@ const router = createRouter({
       path:'/products/trace',
       name: 'trace',
       component: () => import('../views/TraceView.vue')
+    },
+    {
+      path:'/products/teamer',
+      name: 'teamer',
+      component: () => import('../views/TeamerView.vue')
     }
   ]
 })

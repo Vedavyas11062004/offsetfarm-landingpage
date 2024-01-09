@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import contentCard from "@/components/contentCard.vue";
+import contentCard from "@/components/LandingPage/contentCard.vue";
 import truckImage from "@/assets/products/local_shipping_black_24dp 1.svg";
 import analyticsImage from "@/assets/products/track_changes_black_24dp 1.svg";
 
