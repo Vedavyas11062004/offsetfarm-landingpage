@@ -36,6 +36,11 @@ const router = createRouter({
       path:'/products/pulse',
       name: 'pulse',
       component: () => import('../views/PulseView.vue')
+    },
+    {
+      path:'/products/snap',
+      name: 'snap',
+      component: () => import('../views/SnapView.vue')
     }
   ]
 })
