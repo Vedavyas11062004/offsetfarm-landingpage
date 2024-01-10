@@ -53,4 +53,11 @@
   line-height: normal;
   letter-spacing: 0.583px;
 }
+
+@media (max-width:1200px) {
+
+  .hero_contianer{
+    flex-direction: column;
+  }
+}
 </style>

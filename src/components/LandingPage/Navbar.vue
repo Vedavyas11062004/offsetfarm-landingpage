@@ -18,12 +18,20 @@ const productsToggle = () => {
       <img src="@/assets/LandingPage/logo.svg" />
     </div>
     <div :data-expanded="expanded" class="toggle-button" @click="toggleAction">
-      <img v-if="!expanded" src="@/assets/LandingPage/menu.svg" alt="toggle_button" />
+      <img
+        v-if="!expanded"
+        src="@/assets/LandingPage/menu.svg"
+        alt="toggle_button"
+      />
       <img v-else src="@/assets/LandingPage/cross.svg" alt="toggle_button" />
     </div>
     <div :data-expanded="expanded" class="list_div">
       <ul class="list" name="list">
-        <li>Home</li>
+        <li>
+          <router-link to="/" style="text-decoration: none; color: inherit"
+            >Home</router-link
+          >
+        </li>
         <li>
           <div
             class="products_div"
@@ -37,7 +45,13 @@ const productsToggle = () => {
             <ul class="products_list">
               <li>
                 <img src="@/assets/LandingPage/connect-img.svg" alt="connect" />
-                <span>Connect</span>
+                <span
+                  ><router-link
+                    to="/products/connect"
+                    style="text-decoration: none; color: inherit"
+                    >Connect</router-link
+                  >
+                </span>
                 <img
                   src="@/assets/LandingPage/sideArrow.svg"
                   alt="sideArrow"
@@ -46,7 +60,11 @@ const productsToggle = () => {
               </li>
               <li>
                 <img src="@/assets/LandingPage/Trace-img.svg" alt="trace" />
-                <span>Trace</span>
+                <router-link
+                  to="/products/trace"
+                  style="text-decoration: none; color: inherit"
+                  >Trace</router-link
+                >
                 <img
                   src="@/assets/LandingPage/sideArrow.svg"
                   alt="sideArrow"
@@ -55,7 +73,11 @@ const productsToggle = () => {
               </li>
               <li>
                 <img src="@/assets/LandingPage/Teamer-img.svg" alt="teamer" />
-                <span>Teamer</span>
+                <router-link
+                  to="/products/teamer"
+                  style="text-decoration: none; color: inherit"
+                  >Teamer</router-link
+                >
                 <img
                   src="@/assets/LandingPage/sideArrow.svg"
                   alt="sideArrow"
@@ -64,7 +86,11 @@ const productsToggle = () => {
               </li>
               <li>
                 <img src="@/assets/LandingPage/Pulse-img.svg" alt="pulse" />
-                <span>Pulse</span>
+                <router-link
+                  to="/products/pulse"
+                  style="text-decoration: none; color: inherit"
+                  >Pulse</router-link
+                >
                 <img
                   src="@/assets/LandingPage/sideArrow.svg"
                   alt="sideArrow"
@@ -73,7 +99,11 @@ const productsToggle = () => {
               </li>
               <li>
                 <img src="@/assets/LandingPage/snap-img.svg" alt="snap" />
-                <span>Snap</span>
+                <router-link
+                  to="/products/snap"
+                  style="text-decoration: none; color: inherit"
+                  >Snap</router-link
+                >
                 <img
                   src="@/assets/LandingPage/sideArrow.svg"
                   alt="sideArrow"
@@ -189,8 +219,8 @@ const productsToggle = () => {
 
 @media (max-width: 1200px) {
   .header__container {
-    margin-left: 0px;
-    width: 100%;
+    margin-inline: auto;
+    width: 92%;
     justify-content: space-between;
     margin-top: 0%;
   }
@@ -233,14 +263,14 @@ const productsToggle = () => {
   }
   .list_div[data-expanded="true"] {
     display: block;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
     background: var(--Patel-purple, #f3f5ff);
-    z-index: 999; 
-    overflow-y: auto; 
+    z-index: 999;
+    overflow-y: auto;
   }
   .list {
     display: flex;
