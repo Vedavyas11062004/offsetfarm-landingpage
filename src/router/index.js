@@ -31,6 +31,11 @@ const router = createRouter({
       path:'/products/teamer',
       name: 'teamer',
       component: () => import('../views/TeamerView.vue')
+    },
+    {
+      path:'/products/pulse',
+      name: 'pulse',
+      component: () => import('../views/PulseView.vue')
     }
   ]
 })
