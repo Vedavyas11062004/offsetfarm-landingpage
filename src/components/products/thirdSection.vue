@@ -170,15 +170,14 @@
   }
 }
 
-@media (max-width:600px)
-{
-   .image{
+@media (max-width: 600px) {
+  .image {
     width: 300px;
-   }
-   .backgroundImage{
+  }
+  .backgroundImage {
     width: 260px;
-height: 291px;
-transform: translateX(-20%);
-   }
+    height: 291px;
+    transform: translateX(-20%);
+  }
 }
 </style>

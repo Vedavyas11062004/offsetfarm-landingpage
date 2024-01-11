@@ -1,5 +1,5 @@
 <template>
-  <div class="fourth_contsiner">
+  <div class="fourth_container">
     <div class="leftPart">
       <h3>Streamlined User Experience</h3>
       <p>
@@ -18,7 +18,7 @@
 </template>
 
 <style scoped>
-.fourth_contsiner {
+.fourth_container {
   display: flex;
   align-items: center;
   width: 90%;
@@ -44,5 +44,22 @@
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 155.556% */
+}
+
+@media (max-width: 1200px) {
+  .fourth_container {
+    flex-direction: column;
+  }
+  .rigthPart > img {
+    width: 369px;
+  }
+  .leftPart > h3 {
+    color: var(--2nd-font-color, #575353);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 150% */
+  }
 }
 </style>

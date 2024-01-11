@@ -19,7 +19,10 @@ import img2 from "@/assets/Trace/view_timeline_black_24dp 1.svg";
       <div class="section_leftPart">
         <div class="leftContent">
           <h3>Dynamic Survey Management</h3>
-          <p>Deploy and adjust surveys with agility to meet evolving project needs.</p>
+          <p>
+            Deploy and adjust surveys with agility to meet evolving project
+            needs.
+          </p>
         </div>
         <div class="contentCards_container">
           <contentCard
@@ -143,7 +146,7 @@ import img2 from "@/assets/Trace/view_timeline_black_24dp 1.svg";
   font-weight: 500;
   line-height: 48px; /* 126.316% */
   letter-spacing: -0.2px;
-  padding-block:6px;
+  padding-block: 6px;
 }
 .leftContent > p {
   color: var(--2nd-font-color, #575353);
@@ -154,26 +157,36 @@ import img2 from "@/assets/Trace/view_timeline_black_24dp 1.svg";
   line-height: 28px; /* 155.556% */
   letter-spacing: 0.2px;
 }
-.contentCards_container{
-    display:flex;
-    flex-direction:column;
-    gap:48px;
+.contentCards_container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 @media (max-width: 1200px) {
-  .content_text > h3 {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.583px;
+  .thirdSection_container {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
   }
-  .content_text > p {
-    font-size: 15px;
+  .leftContent > h3 {
+    color: var(--Secondary-1ST-FontTT-color, #343434);
+    font-family: Lato;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.583px;
+    font-weight: 700;
+    line-height: 48px; /* 200% */
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .image {
+    width: 270px;
+  }
+  .backgroundImage {
+    width: 260px;
+    height: 291px;
+    transform: translateX(-20%);
   }
 }
 </style>
