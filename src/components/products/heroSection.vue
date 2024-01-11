@@ -13,7 +13,7 @@
       </p>
     </div>
     <div class="hero_rightPart">
-      <img src="@/assets/Gifs/real-time-reporting.gif" alt="img.." />
+      <img src="@/assets/products/conect-hero.svg" alt="img.." />
     </div>
   </div>
 </template>
@@ -24,9 +24,10 @@
   width: 90%;
   margin-inline: auto;
   align-items: center;
+  gap: 50px;
 }
 .hero_rightPart > img {
-  width: 756px;
+  width: 724px;
 }
 .hero_leftPart {
   display: flex;

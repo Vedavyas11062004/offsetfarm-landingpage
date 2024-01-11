@@ -33,9 +33,10 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 108px;
 }
 
-@media (max-width:12000px) {
+@media (max-width:1200px) {
 
   .companys{
     width: 90%;

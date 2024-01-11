@@ -25,22 +25,28 @@ import img2 from "@/assets/products/contentCard2.svg";
           />
         </div>
       </div>
+      <div class="section_rightPart">
+        <img src="@/assets/Gifs/Intutive-Designs.gif" alt="img.." />
+      </div>
     </div>
-    <div class="section_rightPart"></div>
   </div>
 </template>
 
 <style scoped>
 .section_container {
   display: flex;
-  padding-block: 126px;
   background-image: url("@/assets/products/second_section_background.svg");
   background-repeat: no-repeat;
   margin-block: 50px;
+  padding-top: 86px;
+  padding-bottom: 80px;
 }
 .container {
   width: 90%;
   margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .section_leftPart {
   display: flex;
@@ -83,9 +89,16 @@ import img2 from "@/assets/products/contentCard2.svg";
   gap: 48px;
 }
 
+.section_rightPart > img {
+  width: 432px;
+  height: 627px;
+}
+
 @media (max-width: 1200px) {
   .section_container {
     margin-block: 0px;
+    background-size: cover;
+    background-position: center;
   }
   .leftContent > h3 {
     color: var(--Secondary-1ST-FontTT-color, #343434);
@@ -105,9 +118,18 @@ import img2 from "@/assets/products/contentCard2.svg";
     line-height: normal;
     letter-spacing: 0.583px;
   }
-  .contentCards_container{
+  .contentCards_container {
     flex-basis: 90%;
     max-width: 90%;
+  }
+  .container {
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 30px;
+  }
+  .section_rightPart > img {
+    width: 217.355px;
+    height: 339.488px;
   }
 }
 </style>

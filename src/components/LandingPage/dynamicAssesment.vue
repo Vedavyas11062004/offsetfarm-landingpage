@@ -97,7 +97,7 @@ const data = ref([
 
 .cards {
   display: flex;
-  gap: 80px;
+  gap: 25px;
 }
 
 .rightPart > img {

@@ -81,7 +81,7 @@ const data = ref([
 
 .cards {
   display: flex;
-  gap: 77px;
+  gap: 37px;
 }
 
 @media (max-width: 1200px) {

@@ -12,7 +12,7 @@
       </p>
     </div>
     <div class="right_part">
-      <!-- <img src="@/assets/Pulse/lastPart.svg" alt="last.." /> -->
+      <img src="@/assets/snap/snap-last.svg" alt="last.." />
     </div>
   </div>
 </template>
