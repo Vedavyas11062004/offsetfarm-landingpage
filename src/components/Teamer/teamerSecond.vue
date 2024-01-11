@@ -122,17 +122,20 @@
   border-radius: 30px;
   background: #f8f8f8;
   padding: 32px;
-  gap:20px;
+  gap: 20px;
 }
-.third_div>div,.second_div>div{
+.third_div > div,
+.second_div > div {
   display: flex;
   flex-direction: column;
 }
-.third_div>div>img,.second_div>div>img{
+.third_div > div > img,
+.second_div > div > img {
   width: 214px;
   padding-bottom: 34px;
 }
-.third_div>div>h3,.second_div>div>h3{
+.third_div > div > h3,
+.second_div > div > h3 {
   color: #303030;
   font-family: Lato;
   font-size: 28px;
@@ -142,7 +145,8 @@
   text-transform: capitalize;
   padding-bottom: 10px;
 }
-.third_div>div>p,.second_div>div>p{
+.third_div > div > p,
+.second_div > div > p {
   color: #4e4e4e;
   text-align: justify;
   font-family: Lato;
@@ -160,10 +164,12 @@
   flex-direction: column;
   gap: 34px;
 }
-.fourth_div > img,.first_div > img{
+.fourth_div > img,
+.first_div > img {
   width: 214px;
 }
-.fourth_div > div > h3,.first_div > div > h3{
+.fourth_div > div > h3,
+.first_div > div > h3 {
   color: #303030;
   font-family: Lato;
   font-size: 28px;
@@ -173,7 +179,8 @@
   text-transform: capitalize;
   padding-bottom: 10px;
 }
-.fourth_div > div > p,.first_div > div >p{
+.fourth_div > div > p,
+.first_div > div > p {
   color: #4e4e4e;
   text-align: justify;
   font-family: Lato;
@@ -181,5 +188,66 @@
   font-style: normal;
   font-weight: 400;
   line-height: 160%; /* 28.8px */
+}
+
+@media (max-width: 1200px) {
+  .top_part {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .top_part > h3 {
+    color: var(--Secondary-1ST-FontTT-color, #303030);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 133.2%; /* 31.968px */
+    text-transform: capitalize;
+  }
+
+  .bottom_part {
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+  }
+  .second_div {
+    grid-row: 2/4;
+    grid-column: 1/2;
+    flex-direction: column;
+  }
+  .second_div > img {
+    width: 231px;
+  }
+  .third_div {
+    flex-direction: column;
+  }
+  .third_div > img {
+    width: 216px;
+  }
+  .fourth_div {
+    grid-column: 1/2;
+  }
+  .fourth_div > img,
+  .first_div > img {
+    width: 159px;
+  }
+  .third_div > div > img,
+  .second_div > div > img {
+    width: 154px;
+    padding-bottom: 34px;
+  }
+  .fourth_div > div > h3,
+  .first_div > div > h3,.second_div>div>h3,.third_div>div>h3 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 133.2%;
+  }
+  .fourth_div > div > p,
+  .first_div > div > p,.first_div>div>p,.third_div>div>p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138%;
+  }
 }
 </style>

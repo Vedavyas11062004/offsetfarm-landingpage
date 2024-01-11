@@ -121,4 +121,38 @@
   font-weight: 400;
   line-height: 26px; /* 144.444% */
 }
+
+@media (max-width: 1200px) {
+  .bottomPart {
+    flex-direction: column;
+  }
+  .rightPart > img {
+    width: 320px;
+  }
+
+  .leftPart > div > img {
+    width: 24px;
+    align-self: flex-start;
+    margin-top: 5px;
+  }
+  .topPart > h2 {
+    color: #321370;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; /* 233.333% */
+    letter-spacing: -2px;
+  }
+  .topPart > span {
+    color: #374c8b;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 184.615% */
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+  }
+}
 </style>

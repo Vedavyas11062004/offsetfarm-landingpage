@@ -111,6 +111,8 @@ const data = ref([
     grid-template-columns: 1fr;
     width: 90%;
     margin-inline: auto;
+    margin-block: 20px;
+    align-items: center;
     /* overflow: hidden; */
   }
   .rightPart {
@@ -134,14 +136,13 @@ const data = ref([
     /* text-align: center; */
   }
   .rightPart {
-    width: 90%;
     margin-inline: auto;
     background-size: contain;
     margin-top: 10px;
     margin-bottom: 20px;
   }
   .rightPart > img {
-    width: 197.355px;
+    width: 257.355px;
     height: 339.488px;
   }
   .contentCard {

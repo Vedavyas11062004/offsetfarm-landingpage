@@ -69,4 +69,42 @@
   left: 50%;
   transform: translateY(-50%);
 }
+
+@media (max-width: 1200px) {
+  .third_container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .textContent {
+    max-width: 90%;
+  }
+  .textContent > h3 {
+    color: var(--2nd-font-color, #575353);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 150% */
+  }
+  .textContent > p {
+    color: var(--2nd-font-color, #575353);
+    text-align: justify;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+  }
+}
+@media (max-width: 600px) {
+  .image {
+    width: 270px;
+    left: 30%;
+  }
+  .backgroundImage {
+    width: 260px;
+    height: 291px;
+    transform: translateX(-20%);
+  }
+}
 </style>
