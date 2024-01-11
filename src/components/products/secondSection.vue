@@ -35,6 +35,7 @@ import img2 from "@/assets/products/contentCard2.svg";
   display: flex;
   padding-block: 126px;
   background-image: url("@/assets/products/second_section_background.svg");
+  background-repeat: no-repeat;
   margin-block: 50px;
 }
 .container {
@@ -63,7 +64,7 @@ import img2 from "@/assets/products/contentCard2.svg";
   font-weight: 500;
   line-height: 48px; /* 126.316% */
   letter-spacing: -0.2px;
-  padding-block:6px;
+  padding-block: 6px;
 }
 .leftContent > p {
   color: var(--2nd-font-color, #575353);
@@ -74,11 +75,39 @@ import img2 from "@/assets/products/contentCard2.svg";
   line-height: 28px; /* 155.556% */
   letter-spacing: 0.2px;
 }
-.contentCards_container{
-    flex-basis:50%;
-    max-width:50%;
-    display:flex;
-    flex-direction:column;
-    gap:48px;
+.contentCards_container {
+  flex-basis: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+@media (max-width: 1200px) {
+  .section_container {
+    margin-block: 0px;
+  }
+  .leftContent > h3 {
+    color: var(--Secondary-1ST-FontTT-color, #343434);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px; /* 120.833% */
+    letter-spacing: -0.2px;
+  }
+  .leftContent > span {
+    color: var(--Action-color, var(--action-color, #5b70af));
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.583px;
+  }
+  .contentCards_container{
+    flex-basis: 90%;
+    max-width: 90%;
+  }
 }
 </style>

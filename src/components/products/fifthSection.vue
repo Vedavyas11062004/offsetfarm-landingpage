@@ -15,7 +15,13 @@
       <div class="topPart">
         <h3>Integrated Document Management</h3>
         <p>
-            It automates the generation of crucial documents, such as delivery notes and invoices, ensuring swift production upon order confirmation. This instantaneous documentation not only accelerates processes but also reduces the risk of manual entry errors. By automating agreements and invoices, businesses enhance efficiency and maintain accuracy in their transactions. The streamlined approach contributes to error reduction, ultimately optimizing overall workflow.
+          It automates the generation of crucial documents, such as delivery
+          notes and invoices, ensuring swift production upon order confirmation.
+          This instantaneous documentation not only accelerates processes but
+          also reduces the risk of manual entry errors. By automating agreements
+          and invoices, businesses enhance efficiency and maintain accuracy in
+          their transactions. The streamlined approach contributes to error
+          reduction, ultimately optimizing overall workflow.
         </p>
       </div>
     </div>
@@ -76,4 +82,26 @@
   line-height: 129%; /* 23.22px */
 }
 
+@media (max-width: 1200px) {
+  .thirdSection_container {
+    grid-template-columns: 1fr;
+  }
+  .rightPart {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+}
+
+@media (max-width: 600px) {
+  .image {
+    width: 283.554px;
+    height: 287.237px;
+  }
+  .backgroundImage {
+  border-radius: 26px;
+  background: var(--Patel-purple, #f3f5ff);
+  width: 247.092px;
+  height: 211.47px;
+}
+}
 </style>

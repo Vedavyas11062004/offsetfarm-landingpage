@@ -95,4 +95,23 @@
   font-weight: 400;
   line-height: 129%; /* 23.22px */
 }
+
+@media (max-width:1200px)
+{
+  .last_container{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .topPart{
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width:600px)
+{
+  .rightPart>img{
+    width: 344.023px;
+height: 204.893px;
+  }
+}
 </style>

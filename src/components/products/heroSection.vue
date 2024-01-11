@@ -54,10 +54,25 @@
   letter-spacing: 0.583px;
 }
 
-@media (max-width:1200px) {
-
-  .hero_contianer{
+@media (max-width: 1200px) {
+  .hero_contianer {
     flex-direction: column;
+  }
+  .hero_leftPart > h2 {
+    color: var(--2nd-font-color, #575353);
+    font-family: Lato;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.583px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .hero_rightPart > img {
+    width: 354.256px;
   }
 }
 </style>

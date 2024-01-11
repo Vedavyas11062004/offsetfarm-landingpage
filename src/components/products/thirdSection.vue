@@ -11,31 +11,31 @@
         />
       </div>
     </div>
-    <div class="rightPart">
-      <div class="topPart">
-        <h3>Rapid Customer Qualification</h3>
-        <p>
-          Speed up the journey from potiential lead to confirmed customer with
-          our simplified process. We've made it easy to qualify customers
-          rapidly, minimizing delays in the transition. Our smart validation
-          system ensures that the onboarding process is not only quick but also
-          maintains high standards.
-        </p>
-      </div>
-      <div class="bottomPart">
-        <div class="card_content">
-          <img src="@/assets/LandingPage/pseudo-line.svg" alt="line" />
-          <div class="content_text">
-            <h3>Unlock a 90%</h3>
-            <p>
-              reduction in decision-making time! Experience a revolutionary
-              approach to approval processes as we introduce a method that
-              streamlines the entire experience.
-            </p>
-          </div>
+    <!-- <div class="rightPart"> -->
+    <div class="topPart">
+      <h3>Rapid Customer Qualification</h3>
+      <p>
+        Speed up the journey from potiential lead to confirmed customer with our
+        simplified process. We've made it easy to qualify customers rapidly,
+        minimizing delays in the transition. Our smart validation system ensures
+        that the onboarding process is not only quick but also maintains high
+        standards.
+      </p>
+    </div>
+    <div class="bottomPart">
+      <div class="card_content">
+        <img src="@/assets/LandingPage/pseudo-line.svg" alt="line" />
+        <div class="content_text">
+          <h3>Unlock a 90%</h3>
+          <p>
+            reduction in decision-making time! Experience a revolutionary
+            approach to approval processes as we introduce a method that
+            streamlines the entire experience.
+          </p>
         </div>
       </div>
     </div>
+    <!-- </div> -->
   </div>
 </template>
 
@@ -49,9 +49,12 @@
   position: relative;
   align-items: center;
   margin-block: 2rem;
+  row-gap: 20px;
 }
 .leftPart {
   width: 50%;
+  grid-row: 1/3;
+  grid-column: 1/2;
 }
 .backgroundImage {
   border-radius: 26px;
@@ -68,7 +71,7 @@
   transform: translateY(-50%);
 }
 .topPart {
-  margin-bottom: 27px;
+  align-self: self-end;
 }
 .topPart > h3 {
   color: var(--Secondary-1ST-FontTT-color, #343434);
@@ -78,6 +81,7 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.583px;
+  padding-bottom: 10px;
 }
 
 .topPart > p {
@@ -122,7 +126,34 @@
   letter-spacing: 0.583px;
 }
 
+.bottomPart {
+  grid-column: 2/3;
+  align-self: self-start;
+}
+
 @media (max-width: 1200px) {
+  .thirdSection_container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .leftPart {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    /* transform: translateX(-40%); */
+    width: 90%;
+    margin-inline: auto;
+  }
+  .bottomPart {
+    grid-column: 1/2;
+    width: 90%;
+    margin-inline: auto;
+  }
+  .topPart {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 90%;
+    margin-inline: auto;
+  }
   .content_text > h3 {
     font-size: 18px;
     font-style: normal;
@@ -137,5 +168,17 @@
     line-height: normal;
     letter-spacing: 0.583px;
   }
+}
+
+@media (max-width:600px)
+{
+   .image{
+    width: 300px;
+   }
+   .backgroundImage{
+    width: 260px;
+height: 291px;
+transform: translateX(-20%);
+   }
 }
 </style>

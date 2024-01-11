@@ -115,8 +115,10 @@ const data = ref([
 
 @media (max-width: 1200px) {
   .assesment {
-    margin-left: 0%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin-top: 20px;
   }
   .assesment_content > h2 {
     font-size: 28px;
@@ -132,9 +134,9 @@ const data = ref([
     line-height: 24px;
   }
   .assesment_content {
-    width: 90%;
-    margin-inline: auto;
     overflow: hidden;
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
   .assesment_container {
     flex-direction: column-reverse;
@@ -145,12 +147,15 @@ const data = ref([
 
   .rightPart {
     margin-inline: auto;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 20px;
   }
-  .rightPart > img {
+  /* .rightPart > img {
     width: 336px;
     height: 208px;
     margin-inline: auto;
-  }
+  } */
   .cards {
     flex-direction: column;
     gap: 25px;
@@ -160,6 +165,16 @@ const data = ref([
   }
   .contentCard {
     width: auto;
+  }
+}
+
+@media (max-width:600px)
+{
+  .assesment{
+    row-gap: 10px;
+  }
+  .assesment_content{
+    margin-bottom: 0px;
   }
 }
 </style>
