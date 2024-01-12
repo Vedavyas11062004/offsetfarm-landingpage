@@ -82,8 +82,8 @@ import img2 from "@/assets/products/contentCard2.svg";
   letter-spacing: 0.2px;
 }
 .contentCards_container {
-  flex-basis: 50%;
-  max-width: 50%;
+  flex-basis: 80%;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   gap: 48px;

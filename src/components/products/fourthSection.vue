@@ -55,7 +55,7 @@ const data = ref([
   /* margin-bottom: 142px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr 2fr;
   width: 90%;
   margin-inline: auto;
   position: relative;

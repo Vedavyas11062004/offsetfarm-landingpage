@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="rightPart">
-      <img src="@/assets/products/MacBookAir.svg" alt="img.." />
+      <img src="@/assets/products/connect-last.svg" alt="img.." />
     </div>
   </div>
 </template>
@@ -40,6 +40,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
+  gap: 50px;
 }
 
 .card_content {
@@ -94,6 +95,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 129%; /* 23.22px */
+}
+
+.rightPart>img{
+   width: 700px;
 }
 
 @media (max-width:1200px)
