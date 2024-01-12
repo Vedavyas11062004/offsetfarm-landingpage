@@ -56,4 +56,35 @@
   font-weight: 400;
   line-height: 28px; /* 155.556% */
 }
+
+@media (max-width:1200px)
+{
+  .third_container{
+    flex-direction: column;
+    gap: 20px;
+    margin-block: 0px;
+  }
+  .rightPart>img{
+    width: 320px;
+  }
+  .leftPart>span{
+    font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.583px;
+  }
+  .leftPart>h2{
+    font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 32px; 
+  }
+  .leftPart>p{
+    font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+  }
+}
 </style>

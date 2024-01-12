@@ -108,11 +108,29 @@
 }
 
 @media (max-width: 1200px) {
+  .backgroundImg {
+    background-image: url("@/assets/snap/background-2.svg");
+    padding-block: 60px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+  }
   .customer_container {
     margin-inline: 0px;
     width: 90%;
     margin-inline: auto;
     flex-direction: column;
+    gap: 20px;
+  }
+  .customer_container > h2 {
+    color: var(--Secondary-1ST-FontTT-color, #343434);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 200% */
   }
   .leftPart {
     width: auto;
@@ -138,6 +156,11 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.583px;
+  }
+  .points {
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
   }
 }
 </style>
