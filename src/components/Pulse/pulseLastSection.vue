@@ -54,4 +54,42 @@
   line-height: normal;
   letter-spacing: 0.583px;
 }
+
+@media (max-width: 1200px) {
+  .last_container {
+    flex-direction: column;
+  }
+  .left_part > h3 {
+    color: var(--2nd-font-color, #575353);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+  }
+  .left_part > span {
+    color: var(--Action-color, var(--action-color, #5b70af));
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.583px;
+  }
+  .left_part > p {
+    color: var(--2nd-font-color, #575353);
+    text-align: justify;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+  }
+}
+
+@media (max-width: 600px) {
+  .right_part > img {
+    width: 359px;
+  }
+}
 </style>

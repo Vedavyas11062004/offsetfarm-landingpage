@@ -8,11 +8,7 @@ import img2 from "@/assets/Pulse/icon-5.2.svg";
   <div class="thirdSection_container">
     <div class="leftPart">
       <div class="backgroundImage">
-        <img
-          src="@/assets/Pulse/Chart.svg"
-          alt="img.."
-          class="image"
-        />
+        <img src="@/assets/Pulse/Chart.svg" alt="img.." class="image" />
       </div>
     </div>
     <div class="rightPart">
@@ -165,19 +161,62 @@ import img2 from "@/assets/Pulse/icon-5.2.svg";
 }
 
 @media (max-width: 1200px) {
-  .content_text > h3 {
-    font-size: 18px;
+  .thirdSection_container {
+    width: 90%;
+    margin-inline: auto;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .leftContent > span {
+    color: var(--Action-color, var(--action-color, #5b70af));
+    font-family: Lato;
+    font-size: 13px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.583px;
   }
+  .leftContent > h3 {
+    color: var(--Secondary-1ST-FontTT-color, #343434);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+  }
+  .content_text > h3 {
+    color: var(--Secondary-1ST-FontTT-color, #343434);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: 0.2px;
+  }
   .content_text > p {
+    color: var(--2nd-font-color, #575353);
+    text-align: justify;
+    font-family: Lato;
     font-size: 15px;
     font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.583px;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    letter-spacing: 0.2px;
+  }
+  .contentCards_container{
+    width: 100%;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .image {
+    width: 270px;
+    left: 30%;
+  }
+  .backgroundImage {
+    width: 260px;
+    height: 291px;
+    transform: translateX(-20%);
   }
 }
 </style>
