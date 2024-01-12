@@ -18,7 +18,7 @@
           <li>Trace</li>
           <li>Teamer</li>
           <li>Pulse</li>
-          <li>snap</li>
+          <li>Snap</li>
         </ul>
       </div>
       <div class="list rightTop">
@@ -119,6 +119,7 @@
   height: 1px;
   background: #D9DBE9;
   margin-inline:77px;
+  opacity: .5;
 }
 
 .footerend{

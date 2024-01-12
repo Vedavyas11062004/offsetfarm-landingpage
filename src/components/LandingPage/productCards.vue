@@ -71,7 +71,7 @@ console.log(props.imageUrl);
   color: var(--vt-c-action-color);
   font-size: 15px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   letter-spacing: 0.583px;
   text-decoration-line: underline;

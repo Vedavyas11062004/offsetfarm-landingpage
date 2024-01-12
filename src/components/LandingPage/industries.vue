@@ -73,9 +73,11 @@ const data = ref([
 }
 .industries_container {
   display: flex;
-  padding-inline: 77px;
+  /* padding-inline: 77px; */
+  width: 90%;
+  margin-inline: auto;
   padding-block: 117px;
-  gap: 49px;
+  /* gap: 29px; */
   align-items: center;
 }
 
@@ -84,6 +86,9 @@ const data = ref([
   gap: 37px;
 }
 
+.contentCard{
+  flex: 1;
+}
 @media (max-width: 1200px) {
   .industries_container {
     flex-direction: column;

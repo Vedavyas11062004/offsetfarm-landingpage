@@ -85,11 +85,12 @@ const toggleDialog = () => {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 77px;
 }
 
 .leftPart {
   width: 50%;
-  margin-top: 77px;
+  /* margin-top: 77px; */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -118,6 +119,7 @@ const toggleDialog = () => {
   line-height: 22px;
   letter-spacing: 0.58px;
   color: var(--vt-c-paragraph-color);
+  text-align: justify;
 }
 
 .leftPart > button {
@@ -238,7 +240,10 @@ const toggleDialog = () => {
   text-align: center;
 }
 
-
+.rightPart{
+  display: flex;
+  align-self: center;
+}
 .rightPart > img {
   max-width: 774px;
   height: 472px;
@@ -249,6 +254,9 @@ const toggleDialog = () => {
   main {
     width: 90%;
     margin-inline: auto;
+  }
+  .welcome_container{
+    margin-top: 127px;
   }
   .backgroundImg {
     width: 100%;

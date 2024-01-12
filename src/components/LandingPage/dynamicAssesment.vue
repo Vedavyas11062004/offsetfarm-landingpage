@@ -54,21 +54,24 @@ const data = ref([
 
 <style scoped>
 .assesment {
-  margin-left: 77px;
+  /* margin-left: 77px; */
   margin-bottom: 142px;
 }
 .assesment_container {
   width: 90%;
+  margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 100px;
 }
 .leftPart {
   width: 55%;
 }
 .assesment_content {
-  margin-bottom: 26px;
+  /* margin-bottom: 26px; */
+  width: 90%;
+  margin-inline: auto;
 }
 .assesment_content > h2 {
   color: var(--vt-c-heading-color);
@@ -101,7 +104,7 @@ const data = ref([
 }
 
 .rightPart > img {
-  width: 656px;
+  width: 606px;
 }
 
 @media (max-width: 1200px) {

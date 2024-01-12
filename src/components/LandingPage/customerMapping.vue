@@ -84,13 +84,14 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.583px;
+  width: 520px;
 }
 
 .points > li > p > span {
   color: var(--vt-c-action-color);
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
   letter-spacing: 0.583px;
 }
@@ -117,6 +118,7 @@
   }
   .rightPart > img {
     /* width: 297.731px; */
+    width: 362px;
     height: 249.749px;
     margin-inline: auto;
   }
@@ -126,6 +128,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.583px;
+    width: 100%;
   }
 }
 </style>
