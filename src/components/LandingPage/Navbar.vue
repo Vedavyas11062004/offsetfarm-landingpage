@@ -2,6 +2,8 @@
 import { ref } from "vue";
 const expanded = ref(false);
 const productsExpanded = ref(false);
+const emit = defineEmits(['scrollToReviews','scrollToIndustries'])
+
 
 const toggleAction = () => {
   expanded.value = !expanded.value;
@@ -9,6 +11,14 @@ const toggleAction = () => {
 
 const productsToggle = () => {
   productsExpanded.value = !productsExpanded.value;
+};
+
+const scrollIntoView = () =>{
+  emit('scrollToReviews')
+};
+
+const scrollIntoViewIndustires = () =>{
+  emit('scrollToIndustries')
 };
 </script>
 
@@ -113,8 +123,8 @@ const productsToggle = () => {
             </ul>
           </div>
         </li>
-        <li>Testimonials</li>
-        <li>Industries</li>
+        <li @click="scrollIntoView">Testimonials</li>
+        <li @click="scrollIntoViewIndustires">Industries</li>
       </ul>
     </div>
   </div>

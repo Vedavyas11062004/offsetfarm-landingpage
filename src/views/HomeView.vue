@@ -10,18 +10,46 @@ import reporting from "@/components/LandingPage/reporting.vue";
 import reviews from "@/components/LandingPage/reviews.vue";
 import industries from "@/components/LandingPage/industries.vue";
 import footerContainer from "@/components/LandingPage/footerContainer.vue";
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import Navbar from "@/components/LandingPage/Navbar.vue";
 
-const scrollToHero = () => {
-  window.scrollTo(0, 0);
+const reviewsSectionRef = ref(null);
+const industriesSectionRef = ref(null);
+const heroSectionRef = ref(null);
+
+onMounted(() => {
+  // Set the reviewsSectionRef to the reviews section element after the component is mounted
+  reviewsSectionRef.value = document.getElementById('reviews-section');
+  industriesSectionRef.value = document.getElementById('industries-section');
+  heroSectionRef.value = document.getElementById('hero-section');
+});
+
+const scrollToReviews = () => {
+  console.log("hello");
+  if (reviewsSectionRef.value) {
+    reviewsSectionRef.value.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+const scrollToIndustries = () =>{
+  console.log("hello");
+  if (industriesSectionRef.value) {
+    industriesSectionRef.value.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+const scrollToHome = () =>{
+  // if (heroSectionRef.value) {
+  //   heroSectionRef.value.scrollIntoView({ behavior: 'smooth'});
+  // }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 </script>
 
 <template>
   <main>
-    <Navbar/>
-    <TheWelcome />
+    <Navbar @scrollToReviews="scrollToReviews" @scrollToIndustries="scrollToIndustries"/>
+    <TheWelcome id="hero-section"/>
     <companies />
     <products />
     <features />
@@ -29,10 +57,10 @@ const scrollToHero = () => {
     <customerMapping />
     <intutiveDesign />
     <reporting />
-    <reviews />
-    <industries />
+    <reviews id="reviews-section"/>
+    <industries id="industries-section" />
     <footerContainer />
-    <div class="btn" @click="scrollToHero">
+    <div class="btn" @click="scrollToHome">
       <img src="@/assets/LandingPage/upArrow.svg" alt="arrow" />
     </div>
   </main>
@@ -41,7 +69,6 @@ const scrollToHero = () => {
 <style scoped>
 .btn {
   position: fixed;
-  /* bottom: 20px; */
   top: 658px;
   right: 20px;
 }
