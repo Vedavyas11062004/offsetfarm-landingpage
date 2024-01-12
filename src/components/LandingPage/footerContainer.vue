@@ -41,7 +41,9 @@
     <hr class="line">
     <div>
       <p>Copyright © 2023 Regenfi</p>
-      <p>All Rights Reserved | <span>Legal</span></p>
+      <p>All Rights Reserved | <span><router-link to="/legal" style="text-decoration: none; color: inherit"
+            >Legal</router-link
+          ></span></p>
     </div>
   </div>
 </template>

@@ -41,6 +41,26 @@ const router = createRouter({
       path:'/products/snap',
       name: 'snap',
       component: () => import('../views/SnapView.vue')
+    },
+    {
+      path:'/legal',
+      name: 'legal',
+      component: () => import('../views/LegalView.vue')
+    },
+    {
+      path:'/legal/user',
+      name: 'user',
+      component: () => import('../views/LegalView-2.vue')
+    },
+    {
+      path:'/legal/dataPolicy',
+      name: 'dataPolicy',
+      component: () => import('../views/LegalView-3.vue')
+    },
+    {
+      path:'/legal/dataProcessing',
+      name: 'dataProcessing',
+      component: () => import('../views/LegalView-4.vue')
     }
   ]
 })
