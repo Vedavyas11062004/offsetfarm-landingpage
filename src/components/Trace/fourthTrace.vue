@@ -7,7 +7,7 @@
         most relevant customer data. Optimize teamwork with customer-specific
         surveys to streamline efforts and save time on navigation. Enhance
         efficiency by tailoring interfaces for individual team members,
-        minimizing distractions and maximizing productivity. Prioritize a
+       <span>minimizing distractions and maximizing productivity</span>. Prioritize a
         focused approach to drive meaningful results.
       </p>
     </div>
@@ -44,6 +44,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 155.556% */
+}
+
+.leftPart>p>span{
+  color: #5B70AF;
 }
 
 @media (max-width: 1200px) {

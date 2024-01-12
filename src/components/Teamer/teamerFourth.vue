@@ -68,7 +68,7 @@ const data = ref([
 .rightPart {
   grid-column: 2 / 3;
   grid-row: 1 / 3;
-  justify-self: self-end;
+  justify-self: center;
 }
 
 .leftContent > h2 {

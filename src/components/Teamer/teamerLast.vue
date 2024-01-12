@@ -5,8 +5,10 @@
     <div class="left_part">
       <h3>Productivity Enhancement</h3>
       <p>
-        Optimize team efficiency with our streamlined platform, eliminating
-        redundancies and enhancing task completion rates. Clear task delineation
+        Optimize team efficiency with our streamlined platform,<span
+          >eliminating redundancies</span
+        >
+        and <span>enhancing task</span> completion rates. Clear task delineation
         ensures focused team efforts, driving heightened productivity.
       </p>
     </div>
@@ -43,7 +45,9 @@
   font-weight: 400;
   line-height: 28px; /* 155.556% */
 }
-
+.left_part>p>span{
+  color: var(--vt-c-action-color);
+}
 @media (max-width: 1200px) {
   .last_container {
     flex-direction: column;

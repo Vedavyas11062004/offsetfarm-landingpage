@@ -90,7 +90,7 @@
   gap: 80px;
 }
 .rightPart > img {
-  width: 555.358px;
+  width: 655.358px;
 }
 
 .leftPart {

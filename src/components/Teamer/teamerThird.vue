@@ -66,7 +66,7 @@
 .image {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translateY(-50%);
 }
 

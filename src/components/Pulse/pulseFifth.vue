@@ -62,7 +62,7 @@ import img2 from "@/assets/Pulse/icon-5.2.svg";
 .image {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translateY(-50%);
 }
 .topPart {

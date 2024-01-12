@@ -53,6 +53,7 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.583px;
+  text-align: justify;
 }
 
 @media (max-width: 1200px) {
