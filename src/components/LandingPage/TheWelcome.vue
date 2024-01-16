@@ -1,5 +1,9 @@
 <script setup>
 import { ref, onUnmounted } from "vue";
+import emailjs from '@emailjs/browser';
+
+const formRef = ref(null);
+
 
 const isDialogEnabled = ref(false);
 const toggleDialog = () => {
@@ -23,6 +27,17 @@ const updateBodyStyles = () => {
     document.body.style.height = '';
     document.body.style.overflow = '';
   }
+};
+
+const sendEmail = () => {
+  emailjs.sendForm('service_dxnt9ke', 'template_um05dx2', formRef.value, 'mlYiijjit7187EZMQ')
+    .then((result) => {
+        console.log('SUCCESS!', result.text);
+        isDialogEnabled.value = false;
+        updateBodyStyles();
+    }, (error) => {
+        console.log('FAILED...', error.text);
+    });
 };
 </script>
 
@@ -57,20 +72,23 @@ const updateBodyStyles = () => {
             class="cross"
             @click="toggleDialog"
           />
-          <form class="dialog_form">
+          <form class="dialog_form" ref="formRef" @submit.prevent="sendEmail">
             <h2>Contact Us</h2>
             <p>We are here for you! How can we help?</p>
-            <input type="text" placeholder="Enter your name" class="name" />
+            <input type="text" placeholder="Enter your name" class="name" 
+            name="user_name"/>
             <input
               type="text"
               placeholder="Enter your Email address"
               class="email"
+              name="user_email"
             />
             <label class="messageLabel"> Message </label>
             <input
               type="text"
               placeholder="Go ahead,we are listening.."
               class="message"
+              name="message"
             />
             <button class="submit_button">Submit</button>
           </form>
