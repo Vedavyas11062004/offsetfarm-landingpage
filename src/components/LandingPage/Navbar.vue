@@ -2,8 +2,7 @@
 import { ref } from "vue";
 const expanded = ref(false);
 const productsExpanded = ref(false);
-const emit = defineEmits(['scrollToReviews','scrollToIndustries'])
-
+const emit = defineEmits(["scrollToReviews", "scrollToIndustries"]);
 
 const toggleAction = () => {
   expanded.value = !expanded.value;
@@ -13,12 +12,12 @@ const productsToggle = () => {
   productsExpanded.value = !productsExpanded.value;
 };
 
-const scrollIntoView = () =>{
-  emit('scrollToReviews')
+const scrollIntoView = () => {
+  emit("scrollToReviews");
 };
 
-const scrollIntoViewIndustires = () =>{
-  emit('scrollToIndustries')
+const scrollIntoViewIndustires = () => {
+  emit("scrollToIndustries");
 };
 </script>
 
@@ -36,6 +35,9 @@ const scrollIntoViewIndustires = () =>{
       <img v-else src="@/assets/LandingPage/cross.svg" alt="toggle_button" />
     </div>
     <div :data-expanded="expanded" class="list_div">
+      <div class="list_div_logo">
+        <img src="@/assets/LandingPage/logo.svg" />
+      </div>
       <ul class="list" name="list">
         <li>
           <router-link to="/" style="text-decoration: none; color: inherit"
@@ -58,7 +60,7 @@ const scrollIntoViewIndustires = () =>{
                 <span
                   ><router-link
                     to="/products/connect"
-                    style="text-decoration: none; color: inherit"
+                    style="text-decoration: none"
                     >Connect</router-link
                   >
                 </span>
@@ -72,7 +74,7 @@ const scrollIntoViewIndustires = () =>{
                 <img src="@/assets/LandingPage/Trace-img.svg" alt="trace" />
                 <router-link
                   to="/products/trace"
-                  style="text-decoration: none; color: inherit"
+                  style="text-decoration: none; color: "
                   >Trace</router-link
                 >
                 <img
@@ -83,9 +85,7 @@ const scrollIntoViewIndustires = () =>{
               </li>
               <li>
                 <img src="@/assets/LandingPage/Teamer-img.svg" alt="teamer" />
-                <router-link
-                  to="/products/teamer"
-                  style="text-decoration: none; color: inherit"
+                <router-link to="/products/teamer" style="text-decoration: none"
                   >Teamer</router-link
                 >
                 <img
@@ -96,9 +96,7 @@ const scrollIntoViewIndustires = () =>{
               </li>
               <li>
                 <img src="@/assets/LandingPage/Pulse-img.svg" alt="pulse" />
-                <router-link
-                  to="/products/pulse"
-                  style="text-decoration: none; color: inherit"
+                <router-link to="/products/pulse" style="text-decoration: none"
                   >Pulse</router-link
                 >
                 <img
@@ -109,9 +107,7 @@ const scrollIntoViewIndustires = () =>{
               </li>
               <li>
                 <img src="@/assets/LandingPage/snap-img.svg" alt="snap" />
-                <router-link
-                  to="/products/snap"
-                  style="text-decoration: none; color: inherit"
+                <router-link to="/products/snap" style="text-decoration: none"
                   >Snap</router-link
                 >
                 <img
@@ -215,7 +211,9 @@ const scrollIntoViewIndustires = () =>{
   gap: 1rem;
   align-items: center;
 }
-
+.products_list > li a {
+  color: inherit;
+}
 .sidearrow {
   display: none;
 }
@@ -226,7 +224,9 @@ const scrollIntoViewIndustires = () =>{
   display: block;
   cursor: pointer;
 }
-
+.list_div_logo {
+  display: none;
+}
 @media (max-width: 1200px) {
   .header__container {
     margin-inline: auto;
@@ -242,6 +242,17 @@ const scrollIntoViewIndustires = () =>{
     margin-top: 20px;
     margin-left: 10px;
   }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    99% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   .toggle-button[data-expanded="false"] {
     display: block;
     margin-right: 20px;
@@ -249,8 +260,8 @@ const scrollIntoViewIndustires = () =>{
   }
   .toggle-button[data-expanded="true"] {
     position: fixed;
-    right: 20px;
-    top: 20px;
+    right: 17%;
+    top: 40px;
     z-index: 9999;
     /* background-color: white; */
     width: 24px;
@@ -259,6 +270,7 @@ const scrollIntoViewIndustires = () =>{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    animation: fadeInAnimation 1.25s;
   }
   .toggle-button[data-expanded="true"] > img {
     width: 24px;
@@ -271,23 +283,65 @@ const scrollIntoViewIndustires = () =>{
     height: 100vh;
     background-color: #279de0;
   }
-  .list_div[data-expanded="true"] {
-    display: block;
+  @keyframes expandAnimation {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .list_div {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
     background: var(--Patel-purple, #f3f5ff);
     z-index: 999;
     overflow-y: auto;
+    transition: all 0.5s ease-out;
   }
+
+  .list_div[data-expanded="true"] {
+    animation: expandAnimation 1s ease-out forwards;
+  }
+
+  .list_div[data-expanded="false"] {
+    transform: translateX(-100%);
+  }
+
   .list {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 100px;
     z-index: 200;
+  }
+  .products_div[data-expanded="true"] > .products_list {
+    position: relative;
+    background-color: inherit;
+    border: none;
+    padding-left: 10px;
+  }
+  .products_list > li > img {
+    display: none;
+  }
+  .products_list > li a {
+    color: var(--Action-color, var(--action-color, #5b70af));
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 133.333% */
+    text-transform: uppercase;
+  }
+  .list_div_logo {
+    display: block;
+    margin-top: 38px;
+    margin-left: 10%;
   }
 }
 </style>

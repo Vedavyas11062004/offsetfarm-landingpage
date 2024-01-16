@@ -9,7 +9,7 @@ import img2 from "@/assets/Trace/view_timeline_black_24dp 1.svg";
     <div class="leftPart">
       <div class="backgroundImage">
         <img
-          src="@/assets/products/connectThird.svg"
+          src="@/assets/Trace/Group 1597883151.svg"
           alt="img.."
           class="image"
         />
