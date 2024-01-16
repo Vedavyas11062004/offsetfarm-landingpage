@@ -1,11 +1,13 @@
 <script setup>
 import { ref, onUnmounted } from "vue";
 import emailjs from '@emailjs/browser';
+import popup from '@/components/LandingPage/popup.vue'
 
 const formRef = ref(null);
 
 
 const isDialogEnabled = ref(false);
+const isSubmissionSuccessful = ref(false);
 const toggleDialog = () => {
   isDialogEnabled.value = !isDialogEnabled.value;
   updateBodyStyles();
@@ -34,6 +36,7 @@ const sendEmail = () => {
     .then((result) => {
         console.log('SUCCESS!', result.text);
         isDialogEnabled.value = false;
+        isSubmissionSuccessful.value = true;
         updateBodyStyles();
     }, (error) => {
         console.log('FAILED...', error.text);
@@ -94,6 +97,7 @@ const sendEmail = () => {
           </form>
         </div>
       </div>
+      <popup v-if="isSubmissionSuccessful" @close="isSubmissionSuccessful = false" />
     </div>
   </main>
 </template>
