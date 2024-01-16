@@ -16,11 +16,9 @@
         <div class="card_content">
           <img src="@/assets/LandingPage/pseudo-line.svg" alt="line" />
           <div class="content_text">
-            <h3>Unlock a 90%</h3>
+            <h3>Streamline Payment Tracking</h3>
             <p>
-              reduction in decision-making time! Experience a revolutionary
-              approach to approval processes as we introduce a method that
-              streamlines the entire experience.
+              Improve cash flow with faster payment tracking by customer or team.
             </p>
           </div>
         </div>

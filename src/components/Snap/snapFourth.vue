@@ -85,7 +85,7 @@
   font-family: Lato;
   font-size: 22px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 28px; /* 127.273% */
 }
 .points > li > p {

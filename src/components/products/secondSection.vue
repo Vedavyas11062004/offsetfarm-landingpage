@@ -38,8 +38,8 @@ import img2 from "@/assets/products/contentCard2.svg";
   background-image: url("@/assets/products/second_section_background.svg");
   background-repeat: no-repeat;
   margin-block: 50px;
-  padding-top: 86px;
-  padding-bottom: 80px;
+  padding-top: 46px;
+  padding-bottom: 120px;
 }
 .container {
   width: 90%;
@@ -91,7 +91,7 @@ import img2 from "@/assets/products/contentCard2.svg";
 
 .section_rightPart > img {
   width: 432px;
-  height: 627px;
+  height: 707px;
 }
 
 @media (max-width: 1200px) {

@@ -29,7 +29,13 @@ const data = ref([
         generation, turning data into relationships
       </p>
     </div>
-    <div class="assesment_container">
+    <!-- <div class="assesment_container"> -->
+      <div class="rightPart">
+        <img
+          src="@/assets/Gifs/DYNAMIC LEAD ASSESMENT.gif"
+          alt="dynamic assesment"
+        />
+      </div>
       <div class="leftPart">
         <div class="cards">
           <contentCard
@@ -42,13 +48,7 @@ const data = ref([
           />
         </div>
       </div>
-      <div class="rightPart">
-        <img
-          src="@/assets/Gifs/DYNAMIC LEAD ASSESMENT.gif"
-          alt="dynamic assesment"
-        />
-      </div>
-    </div>
+    <!-- </div> -->
   </div>
 </template>
 
@@ -56,6 +56,11 @@ const data = ref([
 .assesment {
   /* margin-left: 77px; */
   margin-bottom: 142px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin-inline: auto;
+  column-gap: 30px;
 }
 .assesment_container {
   width: 90%;
@@ -65,13 +70,13 @@ const data = ref([
   justify-content: space-between;
   gap: 100px;
 }
-.leftPart {
+/* .leftPart {
   width: 55%;
-}
+} */
 .assesment_content {
   /* margin-bottom: 26px; */
-  width: 90%;
-  margin-inline: auto;
+  /* width: 90%; */
+  /* margin-inline: auto; */
 }
 .assesment_content > h2 {
   color: var(--vt-c-heading-color);
@@ -95,14 +100,18 @@ const data = ref([
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .cards {
   display: flex;
+  width: 100%;
   gap: 25px;
 }
 
+.rightPart{
+  grid-row: span 2;
+}
 .rightPart > img {
   width: 606px;
 }
@@ -111,6 +120,12 @@ const data = ref([
   .assesment {
     margin-left: 0%;
     margin-bottom: 50px;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-right: 0%;
+    width: 90%;
+    margin-inline:auto;
+    row-gap: 20px;
   }
   .assesment_content > h2 {
     font-size: 28px;

@@ -15,7 +15,7 @@
     <div class="leftPart">
       <div class="backgroundImage">
         <img
-          src="@/assets/products/connectThird.svg"
+          src="@/assets/Teamer/Frame 1597883656.svg"
           alt="img.."
           class="image"
         />

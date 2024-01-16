@@ -69,7 +69,7 @@ const scrollToHome = () =>{
 <style scoped>
 .btn {
   position: fixed;
-  top: 658px;
+  top: 628px;
   right: 20px;
 }
 .btn:hover {

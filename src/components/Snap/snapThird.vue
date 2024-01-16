@@ -23,9 +23,9 @@
   width: 90%;
   margin-inline: auto;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  gap: 250px;
+  gap: 200px;
   margin-block: 50px;
 }
 .leftPart > span {
@@ -55,6 +55,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 155.556% */
+}
+.leftPart{
+  width: 50%;
 }
 
 @media (max-width:1200px)

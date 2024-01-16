@@ -1,11 +1,32 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onUnmounted } from "vue";
 
 const isDialogEnabled = ref(false);
 const toggleDialog = () => {
   isDialogEnabled.value = !isDialogEnabled.value;
+  updateBodyStyles();
+};
+
+onUnmounted(() => {
+  document.body.style.width = '';
+  document.body.style.height = '';
+  document.body.style.overflow = '';
+});
+
+const updateBodyStyles = () => {
+  if (isDialogEnabled.value) {
+    document.body.style.width = '100%';
+    document.body.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.width = '';
+    document.body.style.height = '';
+    document.body.style.overflow = '';
+  }
 };
 </script>
+
+
 
 <template>
   <main>
@@ -146,6 +167,7 @@ const toggleDialog = () => {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .dialog {
   width: 461px;
@@ -154,6 +176,7 @@ const toggleDialog = () => {
   border: 1px;
   background-color: white;
   position: relative;
+  max-width: 90%;
 }
 
 .cross {
@@ -198,6 +221,7 @@ const toggleDialog = () => {
   border: none;
   background-color: var(--vt-c-input-color);
   margin-bottom: 24px;
+  max-width: 100%;
 }
 
 .messageLabel {
@@ -219,6 +243,7 @@ const toggleDialog = () => {
   background-color: var(--vt-c-input-color);
   margin-bottom: 24px;
   position: relative;
+  max-width: 100%;
 }
 .message::placeholder {
   position: absolute;
@@ -238,6 +263,7 @@ const toggleDialog = () => {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
+  max-width: 100%;
 }
 
 .rightPart{
@@ -245,9 +271,9 @@ const toggleDialog = () => {
   align-self: center;
 }
 .rightPart > img {
-  max-width: 774px;
-  height: 472px;
-  width: 55vw;
+  max-width: 800px;
+  height: 552px;
+  width: 65vw;
 }
 
 @media (max-width: 1000px) {

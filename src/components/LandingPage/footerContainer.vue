@@ -14,11 +14,41 @@
       <div class="list left">
         <h3>Products</h3>
         <ul>
-          <li>Connect</li>
-          <li>Trace</li>
-          <li>Teamer</li>
-          <li>Pulse</li>
-          <li>Snap</li>
+          <li>
+            <router-link
+              to="/products/connect"
+              style="text-decoration: none; color: inherit"
+              >Connect</router-link
+            >
+          </li>
+          <li>
+            <router-link
+              to="/products/trace"
+              style="text-decoration: none; color: inherit"
+              >Trace</router-link
+            >
+          </li>
+          <li>
+            <router-link
+              to="/products/teamer"
+              style="text-decoration: none; color: inherit"
+              >Teamer</router-link
+            >
+          </li>
+          <li>
+            <router-link
+              to="/products/pulse"
+              style="text-decoration: none; color: inherit"
+              >Pulse</router-link
+            >
+          </li>
+          <li>
+            <router-link
+              to="/products/snap"
+              style="text-decoration: none; color: inherit"
+              >Snap</router-link
+            >
+          </li>
         </ul>
       </div>
       <div class="list rightTop">
@@ -38,12 +68,19 @@
     </div>
   </div>
   <div class="footerend">
-    <hr class="line">
+    <hr class="line" />
     <div>
       <p>Copyright © 2023 Regenfi</p>
-      <p>All Rights Reserved | <span><router-link to="/legal" style="text-decoration: none; color: inherit"
+      <p>
+        All Rights Reserved |
+        <span
+          ><router-link
+            to="/legal"
+            style="text-decoration: none; color: inherit"
             >Legal</router-link
-          ></span></p>
+          ></span
+        >
+      </p>
     </div>
   </div>
 </template>
@@ -116,15 +153,15 @@
   text-transform: uppercase;
 }
 
-.line{
+.line {
   width: 90%;
   height: 1px;
-  background: #D9DBE9;
-  margin-inline:77px;
-  opacity: .5;
+  background: #d9dbe9;
+  margin-inline: 77px;
+  opacity: 0.5;
 }
 
-.footerend{
+.footerend {
   background: var(
     --Regnfi-gradient,
     conic-gradient(
@@ -137,7 +174,7 @@
   );
 }
 
-.footerend>div{
+.footerend > div {
   padding-block: 26px;
   display: flex;
   width: 90%;
@@ -145,27 +182,27 @@
   justify-content: space-between;
 }
 
-.footerend>div>p{
+.footerend > div > p {
   color: var(--vt-c-paragraph-color);
 }
 
-.footerend>div>p>span{
+.footerend > div > p > span {
   color: var(--vt-c-action-color);
 }
 
-@media(max-width: 1200px){
-  .footer_container{
+@media (max-width: 1200px) {
+  .footer_container {
     margin-left: 0%;
     flex-direction: column;
     gap: 30px;
     padding-left: 0%;
     padding-right: 0%;
   }
-  .leftPart{
+  .leftPart {
     width: 90%;
     margin-inline: auto;
   }
-  .lists{
+  .lists {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -173,14 +210,14 @@
     width: 90%;
     margin-inline: auto;
   }
-  .left{
-    grid-column:1/2;
+  .left {
+    grid-column: 1/2;
     grid-row: span 2;
   }
-  .line{
+  .line {
     margin-inline: auto;
   }
-  .footerend>div{
+  .footerend > div {
     margin-inline: auto;
   }
 }
