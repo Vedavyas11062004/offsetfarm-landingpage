@@ -1,10 +1,9 @@
 <script setup>
 import { ref, onUnmounted } from "vue";
-import emailjs from '@emailjs/browser';
-import popup from '@/components/LandingPage/popup.vue'
+import emailjs from "@emailjs/browser";
+import popup from "@/components/LandingPage/popup.vue";
 
 const formRef = ref(null);
-
 
 const isDialogEnabled = ref(false);
 const isSubmissionSuccessful = ref(false);
@@ -14,37 +13,44 @@ const toggleDialog = () => {
 };
 
 onUnmounted(() => {
-  document.body.style.width = '';
-  document.body.style.height = '';
-  document.body.style.overflow = '';
+  document.body.style.width = "";
+  document.body.style.height = "";
+  document.body.style.overflow = "";
 });
 
 const updateBodyStyles = () => {
   if (isDialogEnabled.value) {
-    document.body.style.width = '100%';
-    document.body.style.height = '100vh';
-    document.body.style.overflow = 'hidden';
+    document.body.style.width = "100%";
+    document.body.style.height = "100vh";
+    document.body.style.overflow = "hidden";
   } else {
-    document.body.style.width = '';
-    document.body.style.height = '';
-    document.body.style.overflow = '';
+    document.body.style.width = "";
+    document.body.style.height = "";
+    document.body.style.overflow = "";
   }
 };
 
 const sendEmail = () => {
-  emailjs.sendForm('service_dxnt9ke', 'template_um05dx2', formRef.value, 'mlYiijjit7187EZMQ')
-    .then((result) => {
-        console.log('SUCCESS!', result.text);
+  emailjs
+    .sendForm(
+      "service_d0xnen5",
+      "template_ejn736b",
+      formRef.value,
+      "mlYiijjit7187EZMQ"
+    )
+    .then(
+      (result) => {
+        console.log("SUCCESS!", result.text);
         isDialogEnabled.value = false;
         isSubmissionSuccessful.value = true;
         updateBodyStyles();
-    }, (error) => {
-        console.log('FAILED...', error.text);
-    });
+      },
+      (error) => {
+        console.log("FAILED...", error.text);
+      }
+    );
 };
 </script>
-
-
 
 <template>
   <main>
@@ -54,10 +60,11 @@ const sendEmail = () => {
         <span>IMPACT ENGINE</span>
         <h1>ENTERPRISE SUITE FOR IMPACT</h1>
         <p>
-          Unleash the impact potential of your projects in emerging markets.
-          Seamlessly deploy assets, monitor with precision, and virtualize teams
-          for real-time insights. Tailored for grassroot organisations and
-          financiers desiring transparent impact.
+          Unleash the impact potential of community centric projects. Tailored
+          for grassroots organisations, impact investors and corporate
+          sustainability initiatives. Seamlessly deploy assts, monitor with
+          precision and transparency, and manage teams virtually for real-time
+          insights.
         </p>
         <button @click="toggleDialog">Get Started</button>
       </div>
@@ -78,8 +85,12 @@ const sendEmail = () => {
           <form class="dialog_form" ref="formRef" @submit.prevent="sendEmail">
             <h2>Contact Us</h2>
             <p>We are here for you! How can we help?</p>
-            <input type="text" placeholder="Enter your name" class="name" 
-            name="user_name"/>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              class="name"
+              name="user_name"
+            />
             <input
               type="text"
               placeholder="Enter your Email address"
@@ -97,7 +108,10 @@ const sendEmail = () => {
           </form>
         </div>
       </div>
-      <popup v-if="isSubmissionSuccessful" @close="isSubmissionSuccessful = false" />
+      <popup
+        v-if="isSubmissionSuccessful"
+        @close="isSubmissionSuccessful = false"
+      />
     </div>
   </main>
 </template>
@@ -288,7 +302,7 @@ const sendEmail = () => {
   max-width: 100%;
 }
 
-.rightPart{
+.rightPart {
   display: flex;
   align-self: center;
 }
@@ -303,7 +317,7 @@ const sendEmail = () => {
     width: 90%;
     margin-inline: auto;
   }
-  .welcome_container{
+  .welcome_container {
     margin-top: 127px;
   }
   .backgroundImg {

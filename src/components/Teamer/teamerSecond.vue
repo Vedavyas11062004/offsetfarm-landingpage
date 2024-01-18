@@ -216,12 +216,16 @@
   }
   .second_div > img {
     width: 231px;
+    align-self: center;
+    padding-top: 20px;
   }
   .third_div {
     flex-direction: column;
   }
   .third_div > img {
     width: 216px;
+    align-self: center;
+    padding-top: 20px;
   }
   .fourth_div {
     grid-column: 1/2;

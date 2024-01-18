@@ -56,38 +56,40 @@
   font-weight: 400;
   line-height: 28px; /* 155.556% */
 }
-.leftPart{
+.leftPart {
   width: 50%;
 }
 
-@media (max-width:1200px)
-{
-  .third_container{
+@media (max-width: 1200px) {
+  .third_container {
     flex-direction: column;
     gap: 20px;
     margin-block: 0px;
   }
-  .rightPart>img{
+  .rightPart > img {
     width: 320px;
   }
-  .leftPart>span{
+  .leftPart{
+    width: 100%;
+  }
+  .leftPart > span {
     font-size: 13px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.583px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.583px;
   }
-  .leftPart>h2{
+  .leftPart > h2 {
     font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: 32px; 
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
   }
-  .leftPart>p{
+  .leftPart > p {
     font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
   }
 }
 </style>

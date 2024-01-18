@@ -270,7 +270,7 @@ const scrollIntoViewIndustires = () => {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    animation: fadeInAnimation 1.25s;
+    animation: fadeInAnimation .55s;
   }
   .toggle-button[data-expanded="true"] > img {
     width: 24px;
@@ -305,7 +305,7 @@ const scrollIntoViewIndustires = () => {
   }
 
   .list_div[data-expanded="true"] {
-    animation: expandAnimation 1s ease-out forwards;
+    animation: expandAnimation .5s ease-out forwards;
   }
 
   .list_div[data-expanded="false"] {
@@ -318,6 +318,7 @@ const scrollIntoViewIndustires = () => {
     position: absolute;
     top: 100px;
     z-index: 200;
+    gap: 20px;
   }
   .products_div[data-expanded="true"] > .products_list {
     position: relative;

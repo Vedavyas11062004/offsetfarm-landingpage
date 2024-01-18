@@ -121,6 +121,7 @@
     margin-inline: 0px;
     width: 90%;
     margin-inline: auto;
+    padding-block: 0px;
     flex-direction: column;
     gap: 20px;
   }
@@ -159,7 +160,7 @@
   }
   .points {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     width: 80%;
   }
 }

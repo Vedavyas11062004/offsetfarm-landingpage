@@ -207,6 +207,9 @@ import img2 from "@/assets/Pulse/icon-5.2.svg";
     width: 100%;
     gap: 20px;
   }
+  .leftPart{
+    grid-row: 2/3;
+  }
 }
 @media (max-width: 600px) {
   .image {

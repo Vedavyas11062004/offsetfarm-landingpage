@@ -5,9 +5,13 @@
       <img src="@/assets/LandingPage/logo.svg" alt="logo.." />
       <p>Enterprise Suite for Impact</p>
       <div class="socialIcons">
-        <img src="@/assets/Social_Media_Icons/Twitter.svg" alt="twitter" />
-        <img src="@/assets/Social_Media_Icons/LinkedIn.svg" alt="linkdin" />
-        <img src="@/assets/Social_Media_Icons/YouTube.svg" alt="youtube" />
+        <a href="https://twitter.com/offsetfarm">
+          <img src="@/assets/Social_Media_Icons/Twitter.svg" alt="twitter" />
+        </a>
+        <a href="https://www.linkedin.com/company/offsetfarm/">
+          <img src="@/assets/Social_Media_Icons/LinkedIn.svg" alt="linkdin" />
+        </a>
+        <!-- <img src="@/assets/Social_Media_Icons/YouTube.svg" alt="youtube" /> -->
       </div>
     </div>
     <div class="lists">

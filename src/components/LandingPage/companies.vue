@@ -19,6 +19,9 @@
   margin-top: 200px;
   margin-bottom: 100px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .companys > h2 {
   color: var(--vt-c-action-color);
@@ -32,8 +35,8 @@
 .companyImages {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap: 108px;
+  justify-content: space-around;
+  gap: 80px;
 }
 
 @media (max-width:1200px) {
