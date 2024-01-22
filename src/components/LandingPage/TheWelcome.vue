@@ -36,7 +36,7 @@ const sendEmail = () => {
       "service_d0xnen5",
       "template_ejn736b",
       formRef.value,
-      "mlYiijjit7187EZMQ"
+      "HQ9L9fQSZ3awnboiw"
     )
     .then(
       (result) => {
