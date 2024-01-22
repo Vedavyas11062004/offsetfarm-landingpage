@@ -59,7 +59,7 @@ const scrollToHome = () =>{
     <reporting />
     <reviews id="reviews-section"/>
     <industries id="industries-section" />
-    <footerContainer />
+    <footerContainer @scrollToReviews="scrollToReviews" @scrollToIndustries="scrollToIndustries" @scrollToHome="scrollToHome"/>
     <div class="btn" @click="scrollToHome">
       <img src="@/assets/LandingPage/upArrow.svg" alt="arrow" />
     </div>

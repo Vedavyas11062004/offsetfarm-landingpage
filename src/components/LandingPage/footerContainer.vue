@@ -1,4 +1,17 @@
-<script setup></script>
+<script setup>
+const emit = defineEmits(["scrollToReviews", "scrollToIndustries","scrollToHome"]);
+const scrollIntoView = () => {
+  emit("scrollToReviews");
+};
+
+const scrollIntoViewIndustires = () => {
+  emit("scrollToIndustries");
+};
+
+const scrollToHome = () => {
+  emit("scrollToHome");
+};
+</script>
 <template>
   <div class="footer_container">
     <div class="leftPart">
@@ -58,9 +71,9 @@
       <div class="list rightTop">
         <h3>Resources</h3>
         <ul>
-          <li>Products</li>
-          <li>Testimonials</li>
-          <li>Industries</li>
+          <li @click="scrollToHome">Products</li>
+          <li @click="scrollIntoView">Testimonials</li>
+          <li @click="scrollIntoViewIndustires">Industries</li>
         </ul>
       </div>
       <div class="list rightBottom">
@@ -192,6 +205,10 @@
 
 .footerend > div > p > span {
   color: var(--vt-c-action-color);
+}
+
+li:hover{
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
